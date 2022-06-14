@@ -53,6 +53,7 @@ struct Constants {
     struct ErrorHandler {
         static let connectionLostMessage = "Connection lost"
         static let videoConnectionClosingErrorMessage = "Error closing video connection"
+        static let dateBaseNoRecordingErrorMessage = "No recordings."
     }
     
     struct RequestStreamParameters {

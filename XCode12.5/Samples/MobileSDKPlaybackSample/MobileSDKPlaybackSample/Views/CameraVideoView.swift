@@ -163,6 +163,14 @@ class CameraVideoView: UIView {
             waitingFirstFrame = false
         }
     }
+    
+    private func reviewReceivedFrame(_ frame: XPSDKVideoConnectionFrame) {
+        if frame.hasPlaybackInformation {
+            if (frame.changedPlaybackEvents & XPSDKVideoConnectionFrameDatabaseError.rawValue) != 0 && (frame.currentPlaybackEvents & XPSDKVideoConnectionFrameDatabaseError.rawValue) != 0 {
+                delegate?.cameraVideoViewDatabaseError(self)
+            }
+        }
+    }
 }
 
 //MARK: XPSDKVideoConnectionDelegate methods
@@ -179,6 +187,7 @@ extension CameraVideoView: XPSDKVideoConnectionDelegate {
         lastFrame = frame
         updateSourceSize(forFame: frame)
         updateLastImage(frame.image)
+        reviewReceivedFrame(frame)
     }
     
     func videoConnection(_ vc: XPSDKDownstreamVideoConnection,
@@ -186,6 +195,8 @@ extension CameraVideoView: XPSDKVideoConnectionDelegate {
         if !lostConnection && (frame.currentLiveEvents & XPSDKVideoConnectionFrameCameraConnectionLost.rawValue) != 0 {
             onLostConnection()
         }
+        
+        reviewReceivedFrame(frame)
     }
     
     func videoConnection(_ videoConnection: XPSDKDownstreamVideoConnection,

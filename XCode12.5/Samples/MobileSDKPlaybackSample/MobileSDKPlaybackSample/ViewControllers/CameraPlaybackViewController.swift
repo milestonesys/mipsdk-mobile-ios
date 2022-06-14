@@ -146,5 +146,7 @@ extension CameraPlaybackViewController: CameraVideoViewDelegate {
     
     func cameraVideoViewDatabaseEndReached(_ cameraVideoView: CameraVideoView) {}
     
-    func cameraVideoViewDatabaseError(_ cameraVideoView: CameraVideoView) {}
+    func cameraVideoViewDatabaseError(_ cameraVideoView: CameraVideoView) {
+        cameraVideoView.showErrorMessage(Constants.ErrorHandler.dateBaseNoRecordingErrorMessage)
+    }
 }
