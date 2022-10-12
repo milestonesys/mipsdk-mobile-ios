@@ -282,11 +282,15 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) NSDictionary
 ///
 /// \param password The password
 ///
+/// \param loginType the login type
+///
+/// \param shouldSave flag to indicate whether credentials should be saved
+///
 /// \param successHandler The success block which returns XPSDKResponse
 ///
 /// \param failureHandler The failure block which returns NSError
 ///
-+ (XPSDKRequest * _Nonnull)loginForUsername:(NSString * _Nonnull)username password:(NSString * _Nonnull)password shouldSave:(BOOL)shouldSave successHandler:(void (^ _Nullable)(XPSDKResponse * _Nullable))successHandler failureHandler:(void (^ _Nullable)(NSError * _Nullable))failureHandler;
++ (XPSDKRequest * _Nonnull)loginForUsername:(NSString * _Nonnull)username password:(NSString * _Nonnull)password loginType:(NSString * _Nullable)loginType shouldSave:(BOOL)shouldSave successHandler:(void (^ _Nullable)(XPSDKResponse * _Nullable))successHandler failureHandler:(void (^ _Nullable)(NSError * _Nullable))failureHandler;
 /// Login
 /// More details about the Connect and Login commands could be found in the Mobile Server Protocol documentation.
 /// \param urlString The URL String to which will connect
@@ -295,11 +299,15 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) NSDictionary
 ///
 /// \param password The password
 ///
+/// \param loginType the login type
+///
+/// \param shouldSave flag to indicate whether credentials should be saved
+///
 /// \param successHandler The success block which returns XPSDKResponse
 ///
 /// \param failureHandler The failure block which returns NSError
 ///
-+ (void)connectAndLoginForURLString:(NSString * _Nonnull)urlString username:(NSString * _Nonnull)username password:(NSString * _Nonnull)password shouldSave:(BOOL)shouldSave successHandler:(void (^ _Nullable)(XPSDKResponse * _Nullable))successHandler failureHandler:(void (^ _Nullable)(NSError * _Nullable))failureHandler;
++ (void)connectAndLoginForURLString:(NSString * _Nonnull)urlString username:(NSString * _Nonnull)username password:(NSString * _Nonnull)password loginType:(NSString * _Nullable)loginType shouldSave:(BOOL)shouldSave successHandler:(void (^ _Nullable)(XPSDKResponse * _Nullable))successHandler failureHandler:(void (^ _Nullable)(NSError * _Nullable))failureHandler;
 /// Connect and login - first connects to a server, and then logins the user
 /// More details about the Connect and Login commands could be found in the Mobile Server Protocol documentation.
 /// \param serverInfo A object of clas XPSDKServerInfo, containing server information
@@ -308,11 +316,15 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) NSDictionary
 ///
 /// \param password The password
 ///
+/// \param loginType the login type
+///
+/// \param shouldSave flag to indicate whether credentials should be saved
+///
 /// \param successHandler The success block which returns XPSDKResponse
 ///
 /// \param failureHandler The failure block which returns NSError
 ///
-+ (void)connectAndLoginForServerInfo:(XPSDKServerInfo * _Nonnull)serverInfo username:(NSString * _Nonnull)username password:(NSString * _Nonnull)password shouldSave:(BOOL)shouldSave successHandler:(void (^ _Nullable)(XPSDKResponse * _Nullable))successHandler failureHandler:(void (^ _Nullable)(NSError * _Nullable))failureHandler;
++ (void)connectAndLoginForServerInfo:(XPSDKServerInfo * _Nonnull)serverInfo username:(NSString * _Nonnull)username password:(NSString * _Nonnull)password loginType:(NSString * _Nullable)loginType shouldSave:(BOOL)shouldSave successHandler:(void (^ _Nullable)(XPSDKResponse * _Nullable))successHandler failureHandler:(void (^ _Nullable)(NSError * _Nullable))failureHandler;
 /// Requests second step authentication pin
 /// More details about the SecondStepAuthentication command could be found in the Mobile Server Protocol documentation.
 /// \param successHandler The success block which returns XPSDKResponse
@@ -1218,9 +1230,11 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) XPSDKConnection * _Non
 ///
 /// \param password the password
 ///
+/// \param loginType the login type
+///
 /// \param shouldSave flag to indicate whether credentials should be saved
 ///
-- (void)setupWithUsername:(NSString * _Nonnull)username password:(NSString * _Nonnull)password shouldSave:(BOOL)shouldSave;
+- (void)setupWithUsername:(NSString * _Nonnull)username password:(NSString * _Nonnull)password loginType:(NSString * _Nullable)loginType shouldSave:(BOOL)shouldSave;
 /// Change the heartbeat timeout
 - (void)setHeartbeatTimeoutWithNewValue:(NSInteger)newValue;
 /// Adds race connection
@@ -1281,6 +1295,25 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) XPSDKConnection * _Non
 /// \param failureHandler The failure block which returns NSError
 ///
 - (XPSDKRequest * _Nullable)loginWithSuccessHandler:(void (^ _Nullable)(XPSDKResponse * _Nullable))successHandler failureHandler:(void (^ _Nullable)(NSError * _Nullable))failureHandler;
+/// login: External login method
+/// <ul>
+///   <li>
+///     returns request: The executed request
+///   </li>
+/// </ul>
+/// \param idpClientId The client id of the external identity provider.
+///
+/// \param accessToken The access token obtained from the external identity provider.
+///
+/// \param refreshToken The refresh token obtained from the external identity provider.
+///
+/// \param idToken The id token obtained from the external identity provider.
+///
+/// \param successHandler The success block which returns XPSDKResponse
+///
+/// \param failureHandler The failure block which returns NSError
+///
+- (XPSDKRequest * _Nullable)logInExternalWithIdpClientId:(NSString * _Nullable)idpClientId accessToken:(NSString * _Nullable)accessToken refreshToken:(NSString * _Nullable)refreshToken idToken:(NSString * _Nullable)idToken successHandler:(void (^ _Nullable)(XPSDKResponse * _Nullable))successHandler failureHandler:(void (^ _Nullable)(NSError * _Nullable))failureHandler;
 @end
 
 
@@ -1347,6 +1380,22 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 + (NSString * _Nonnull)XPSDKUsername SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull XPSDKPassword;)
 + (NSString * _Nonnull)XPSDKPassword SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull XPSDKIdpClientId;)
++ (NSString * _Nonnull)XPSDKIdpClientId SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull XPSDKAccessToken;)
++ (NSString * _Nonnull)XPSDKAccessToken SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull XPSDKRefreshToken;)
++ (NSString * _Nonnull)XPSDKRefreshToken SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull XPSDKIdentityToken;)
++ (NSString * _Nonnull)XPSDKIdentityToken SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull XPSDKLoginType;)
++ (NSString * _Nonnull)XPSDKLoginType SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull XPSDKLoginTypеBasic;)
++ (NSString * _Nonnull)XPSDKLoginTypеBasic SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull XPSDKLoginTypеWindows;)
++ (NSString * _Nonnull)XPSDKLoginTypеWindows SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull XPSDKLoginTypеExternal;)
++ (NSString * _Nonnull)XPSDKLoginTypеExternal SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull XPSDKCollectUsageData;)
 + (NSString * _Nonnull)XPSDKCollectUsageData SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull XPSDKSecondStepAuthenticationPin;)

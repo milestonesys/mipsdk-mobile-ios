@@ -71,7 +71,7 @@ import _Concurrency
   @objc public func setupWithURLString(_ urlString: Swift.String, uuid: Swift.String? = nil, serviceAlias: Swift.String? = nil)
   @objc public func setupWithServerInfo(_ serInfo: MIPSDKMobile.XPSDKServerInfo)
   @objc public func isUserAnalyticsFeatureEnabledOnServer() -> Swift.Bool
-  @objc public func setupWithUsername(_ username: Swift.String, password: Swift.String, shouldSave: Swift.Bool)
+  @objc public func setupWithUsername(_ username: Swift.String, password: Swift.String, loginType: Swift.String? = nil, shouldSave: Swift.Bool)
   @objc open func setHeartbeatTimeout(newValue: Swift.Int)
   @objc public func addRaceConnection(_ raceConnection: MIPSDKMobile.XPSDKConnection?)
   public func addRequest(_ request: MIPSDKMobile.XPSDKRequest?)
@@ -223,6 +223,8 @@ extension MIPSDKMobile.XPSDKConnection {
 extension MIPSDKMobile.XPSDKConnection {
   @discardableResult
   @objc dynamic public func login(withSuccessHandler successHandler: MIPSDKMobile.SuccessResponse?, failureHandler: MIPSDKMobile.FailureBlock?) -> MIPSDKMobile.XPSDKRequest?
+  @discardableResult
+  @objc dynamic public func logInExternal(withIdpClientId idpClientId: Swift.String?, accessToken: Swift.String?, refreshToken: Swift.String?, idToken: Swift.String?, successHandler: MIPSDKMobile.SuccessResponse?, failureHandler: MIPSDKMobile.FailureBlock?) -> MIPSDKMobile.XPSDKRequest?
 }
 public enum Level : Swift.Int {
   case verbose
@@ -260,9 +262,9 @@ public enum Level : Swift.Int {
   @objc open class func connectWithURLString(_ urlString: Swift.String, successHandler: MIPSDKMobile.SuccessResponse?, failureHandler: MIPSDKMobile.FailureBlock?)
   @objc open class func connectWithServerInfo(_ serverInfo: MIPSDKMobile.XPSDKServerInfo, successHandler: MIPSDKMobile.SuccessResponse?, failureHandler: MIPSDKMobile.FailureBlock?)
   @objc @discardableResult
-  open class func loginForUsername(_ username: Swift.String, password: Swift.String, shouldSave: Swift.Bool, successHandler: MIPSDKMobile.SuccessResponse?, failureHandler: MIPSDKMobile.FailureBlock?) -> MIPSDKMobile.XPSDKRequest
-  @objc open class func connectAndLoginForURLString(_ urlString: Swift.String, username: Swift.String, password: Swift.String, shouldSave: Swift.Bool, successHandler: MIPSDKMobile.SuccessResponse?, failureHandler: MIPSDKMobile.FailureBlock?)
-  @objc open class func connectAndLoginForServerInfo(_ serverInfo: MIPSDKMobile.XPSDKServerInfo, username: Swift.String, password: Swift.String, shouldSave: Swift.Bool, successHandler: MIPSDKMobile.SuccessResponse?, failureHandler: MIPSDKMobile.FailureBlock?)
+  open class func loginForUsername(_ username: Swift.String, password: Swift.String, loginType: Swift.String? = nil, shouldSave: Swift.Bool, successHandler: MIPSDKMobile.SuccessResponse?, failureHandler: MIPSDKMobile.FailureBlock?) -> MIPSDKMobile.XPSDKRequest
+  @objc open class func connectAndLoginForURLString(_ urlString: Swift.String, username: Swift.String, password: Swift.String, loginType: Swift.String? = nil, shouldSave: Swift.Bool, successHandler: MIPSDKMobile.SuccessResponse?, failureHandler: MIPSDKMobile.FailureBlock?)
+  @objc open class func connectAndLoginForServerInfo(_ serverInfo: MIPSDKMobile.XPSDKServerInfo, username: Swift.String, password: Swift.String, loginType: Swift.String? = nil, shouldSave: Swift.Bool, successHandler: MIPSDKMobile.SuccessResponse?, failureHandler: MIPSDKMobile.FailureBlock?)
   @objc @discardableResult
   open class func requestSecondStepAuthenticationPin(withSuccessHandler successHandler: MIPSDKMobile.SuccessResponse?, failureHandler: MIPSDKMobile.FailureBlock?) -> MIPSDKMobile.XPSDKRequest
   @objc @discardableResult
@@ -398,6 +400,14 @@ extension MIPSDKMobile.XPSDKConnection {
   @objc public static let XPSDKConnect: Swift.String
   @objc public static let XPSDKUsername: Swift.String
   @objc public static let XPSDKPassword: Swift.String
+  @objc public static let XPSDKIdpClientId: Swift.String
+  @objc public static let XPSDKAccessToken: Swift.String
+  @objc public static let XPSDKRefreshToken: Swift.String
+  @objc public static let XPSDKIdentityToken: Swift.String
+  @objc public static let XPSDKLoginType: Swift.String
+  @objc public static let XPSDKLoginTypеBasic: Swift.String
+  @objc public static let XPSDKLoginTypеWindows: Swift.String
+  @objc public static let XPSDKLoginTypеExternal: Swift.String
   @objc public static let XPSDKCollectUsageData: Swift.String
   @objc public static let XPSDKSecondStepAuthenticationPin: Swift.String
   @objc public static let XPSDKSupportsResampling: Swift.String
