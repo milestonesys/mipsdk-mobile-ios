@@ -22,7 +22,7 @@
 		</data>
 		<key>Headers/MIPSDKMobile-Swift.h</key>
 		<data>
-		scCNGNZoqgA+jIXZ8fVvBTuStWk=
+		QpYj7q4ZtRy35Um4lLkO8lfsxKY=
 		</data>
 		<key>Headers/MIPSDKMobile.h</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>Headers/XPSDKDownstreamVideoConnection.h</key>
 		<data>
-		NlZebImNmHKCpteHbBWgAmXLjDg=
+		3lMxfcQL4Pg/Okya9OQhtimI6Bg=
 		</data>
 		<key>Headers/XPSDKLocationData.h</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>Headers/XPSDKUpstreamVideoConnection.h</key>
 		<data>
-		0fkvQ1GPmdwbW2opmMsyrSdc9Nk=
+		VSvDBFtbhHPZS8jYj2kI2178rIU=
 		</data>
 		<key>Headers/XPSDKVideoConnection.h</key>
 		<data>
@@ -66,51 +66,51 @@
 		</data>
 		<key>Headers/XPSDKVideoConnectionFrame.h</key>
 		<data>
-		T0RrfzD3vR1wsyXzUwaKCHExu2o=
+		7eBGlKJpSAdGcPLoQU/8j6o87fk=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		VTAyJ/v1Wv20GIFJuaE21xzehLg=
+		1NJGONIrCchDiRx0gkSYdE7bFGY=
 		</data>
 		<key>Modules/MIPSDKMobile.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		xERJZ88vYZ/sklq6yEAs4yKcoPw=
+		jvVCcsfCLFlOWUSXdLKtEntMje4=
 		</data>
 		<key>Modules/MIPSDKMobile.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		dT/gUGY8yB72ZddroC1Weu+SZ14=
+		D7JZG2VGpNm0DN6ona0l7N1DgF0=
 		</data>
 		<key>Modules/MIPSDKMobile.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		5Ti0ZBVF1D+HA/ZDCcD/njlecTI=
+		r+WKUH6wH1hTvVXXtKq3zf1At1I=
 		</data>
 		<key>Modules/MIPSDKMobile.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		dT/gUGY8yB72ZddroC1Weu+SZ14=
+		D7JZG2VGpNm0DN6ona0l7N1DgF0=
 		</data>
 		<key>Modules/MIPSDKMobile.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		xwLuMe3sPKxZ5I66VcXErX/889U=
+		UzNpeyLtG2vVKpmYAXx3bmIF7aI=
 		</data>
 		<key>Modules/MIPSDKMobile.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		xERJZ88vYZ/sklq6yEAs4yKcoPw=
+		jvVCcsfCLFlOWUSXdLKtEntMje4=
 		</data>
 		<key>Modules/MIPSDKMobile.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		veJF46iHrBX8LU1OKPn9Uo5QM04=
+		l5ayO3qFSXcJRlhaadrsnPTpCyk=
 		</data>
 		<key>Modules/MIPSDKMobile.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		M3cnnchB5Yek79fUiZqiA5ScVIw=
+		2wxgW9FggreNQD/9IsUEq6pUIec=
 		</data>
 		<key>Modules/MIPSDKMobile.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		veJF46iHrBX8LU1OKPn9Uo5QM04=
+		l5ayO3qFSXcJRlhaadrsnPTpCyk=
 		</data>
 		<key>Modules/MIPSDKMobile.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		yfBUqUEe7SYNcWSJRbZB2VJ/5N0=
+		Izwkwy+FAlaNVvZH2aceJlfKz3o=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -155,7 +155,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			u8MH7zL7ZM9jTS7eayW6k2a9g+z+ouVr3a/FszGYLPo=
+			rtZ51Tde+PgiV4X241xP0pun6ApjT4Aifwk+2c9Mjfo=
 			</data>
 		</dict>
 		<key>Headers/MIPSDKMobile.h</key>
@@ -197,7 +197,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			JtvNRc7zBZCZ7yYML4HR9ONJWNpozf2A5kQwwhSezMU=
+			7A3cFCIPAfq+iNNBiP3qVQLnstFYVQkSJkkKNfih3Gk=
 			</data>
 		</dict>
 		<key>Headers/XPSDKLocationData.h</key>
@@ -218,7 +218,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			4K9DF8kCoH2+A0FqPHEg8TaoVUFVNS2Twtm9LxWQx88=
+			h80CFXQIJN9biGN/zHwrOQdfsG6zu7ZGxG1AtclC9Sg=
 			</data>
 		</dict>
 		<key>Headers/XPSDKVideoConnection.h</key>
@@ -232,77 +232,77 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ymvSdpu/6yzv2LgGHdfH8eipTg/OuVrmbz/AmhmVdHQ=
+			j9BphrnASdgJkZqZZB2kfYOnu0EQOUcyqrR0XbrXTyU=
 			</data>
 		</dict>
 		<key>Modules/MIPSDKMobile.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			nxkabr8u7LYGEIMXywmIDRPh+gqwytxpqSq95hZ9iWg=
+			vrqRjO9fZVpnwQEeOXNUt0/+XUpZVpppC2zpE2qmWnc=
 			</data>
 		</dict>
 		<key>Modules/MIPSDKMobile.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+bpomMeMbC4YoHIKgvALb7W8utk+QQWC+MTKU0tNyyk=
+			cYO6vlAerbtsWITswiqjjxfec9fE8HHe9UpDWmx/usU=
 			</data>
 		</dict>
 		<key>Modules/MIPSDKMobile.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			wA5eEuuN/VZiCZCE5V8YGxarTQpM4Qo4mQy7BUI0oJk=
+			Ctc1rcdQlUmKcW+XRM7Vsgzh6jDr/6WxyCS3p5ADv1c=
 			</data>
 		</dict>
 		<key>Modules/MIPSDKMobile.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+bpomMeMbC4YoHIKgvALb7W8utk+QQWC+MTKU0tNyyk=
+			cYO6vlAerbtsWITswiqjjxfec9fE8HHe9UpDWmx/usU=
 			</data>
 		</dict>
 		<key>Modules/MIPSDKMobile.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			jchLvm5dm2lEosCvlwXrVdmTOR3bLqs+SkHVmdjZGMQ=
+			NnoZKtHlS3VsLCpTxgKPJqypvo8RV+1oBNR078mTaUI=
 			</data>
 		</dict>
 		<key>Modules/MIPSDKMobile.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			nxkabr8u7LYGEIMXywmIDRPh+gqwytxpqSq95hZ9iWg=
+			vrqRjO9fZVpnwQEeOXNUt0/+XUpZVpppC2zpE2qmWnc=
 			</data>
 		</dict>
 		<key>Modules/MIPSDKMobile.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			B2EQWxS68aUD4YduFZxXCLvRHqwq4hOHMSyfVH/3kNY=
+			tBnlM0deuSBrO49xawtA2XzGOdZFP96XIqmZq7Jsq7U=
 			</data>
 		</dict>
 		<key>Modules/MIPSDKMobile.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			2x6xSdAs1jmghpEaRVd1jkwQaOjAebf1kxvt9C6SsXY=
+			Nv24Leb/VEoALS/0YgwrUGmK6HEh8vOrgBoxoI/X8yA=
 			</data>
 		</dict>
 		<key>Modules/MIPSDKMobile.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			B2EQWxS68aUD4YduFZxXCLvRHqwq4hOHMSyfVH/3kNY=
+			tBnlM0deuSBrO49xawtA2XzGOdZFP96XIqmZq7Jsq7U=
 			</data>
 		</dict>
 		<key>Modules/MIPSDKMobile.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			6Zafx4+wL97hJx70vdpycZZAKZYR/4RtdiASCQO4jIw=
+			x35OK7Nzy+4ufexiIJVPVrePSH3SDxSpyv+10hzk43Y=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

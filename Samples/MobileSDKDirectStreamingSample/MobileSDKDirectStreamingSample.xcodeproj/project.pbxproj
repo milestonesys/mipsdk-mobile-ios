@@ -18,7 +18,8 @@
 		4EFDDE78268A74F10003904C /* CamerasParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EFDDE76268A74F10003904C /* CamerasParser.swift */; };
 		4EFDDE7C268A77A00003904C /* CameraVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EFDDE7B268A77A00003904C /* CameraVideoView.swift */; };
 		56CBF7FE268DFB9F00908550 /* ResponseItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CBF7FD268DFB9F00908550 /* ResponseItem.swift */; };
-		FECC2EFC28CFC4D80095D69F /* MIPSDKMobile.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = FECC2EFB28CFC4D80095D69F /* MIPSDKMobile.xcframework */; };
+		72E022C92A25EFC600D92A75 /* MIPSDKMobile.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72E022C82A25EFC600D92A75 /* MIPSDKMobile.xcframework */; };
+		72E022CA2A25EFC600D92A75 /* MIPSDKMobile.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 72E022C82A25EFC600D92A75 /* MIPSDKMobile.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FECC2F0328D120DE0095D69F /* XPDirectStreamingPlayerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECC2EFF28D120DE0095D69F /* XPDirectStreamingPlayerManager.swift */; };
 		FECC2F0428D120DE0095D69F /* XPDirectStreamingVideoFilesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECC2F0028D120DE0095D69F /* XPDirectStreamingVideoFilesManager.swift */; };
 		FECC2F0528D120DE0095D69F /* XPDirectStreamingConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECC2F0128D120DE0095D69F /* XPDirectStreamingConstants.swift */; };
@@ -32,6 +33,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				72E022CA2A25EFC600D92A75 /* MIPSDKMobile.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -52,7 +54,7 @@
 		4EFDDE76268A74F10003904C /* CamerasParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CamerasParser.swift; sourceTree = "<group>"; };
 		4EFDDE7B268A77A00003904C /* CameraVideoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraVideoView.swift; sourceTree = "<group>"; };
 		56CBF7FD268DFB9F00908550 /* ResponseItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseItem.swift; sourceTree = "<group>"; };
-		FECC2EFB28CFC4D80095D69F /* MIPSDKMobile.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = MIPSDKMobile.xcframework; sourceTree = "<group>"; };
+		72E022C82A25EFC600D92A75 /* MIPSDKMobile.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MIPSDKMobile.xcframework; path = ../../lib/MIPSDKMobile.xcframework; sourceTree = "<group>"; };
 		FECC2EFF28D120DE0095D69F /* XPDirectStreamingPlayerManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XPDirectStreamingPlayerManager.swift; sourceTree = "<group>"; };
 		FECC2F0028D120DE0095D69F /* XPDirectStreamingVideoFilesManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XPDirectStreamingVideoFilesManager.swift; sourceTree = "<group>"; };
 		FECC2F0128D120DE0095D69F /* XPDirectStreamingConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XPDirectStreamingConstants.swift; sourceTree = "<group>"; };
@@ -64,7 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FECC2EFC28CFC4D80095D69F /* MIPSDKMobile.xcframework in Frameworks */,
+				72E022C92A25EFC600D92A75 /* MIPSDKMobile.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,7 +111,7 @@
 		0A217D551FEAA5060071EABE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				FECC2EFB28CFC4D80095D69F /* MIPSDKMobile.xcframework */,
+				72E022C82A25EFC600D92A75 /* MIPSDKMobile.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

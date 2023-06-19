@@ -553,7 +553,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) NSDictionary
 ///
 + (void)requestAudioStreamForMicrophoneId:(NSString * _Nonnull)micId playbackControllerId:(NSString * _Nullable)playbackControllerId investigationId:(NSString * _Nullable)investigationId audioEncoding:(NSString * _Nonnull)audioEncoding signalType:(NSString * _Nonnull)signalType methodType:(NSString * _Nonnull)methodType closeConnectionOnError:(NSString * _Nullable)closeConnectionOnError successHandler:(void (^ _Nullable)(XPSDKResponse * _Nullable))successHandler failureHandler:(void (^ _Nullable)(NSError * _Nullable))failureHandler;
 /// Request more sources in payback audio session
-/// \param itemId Ids of the devices, which stream is requested (GUID)
+/// \param itemIds Ids of the devices, which stream is requested (GUID)
 ///
 /// \param playbackControllerId (optional; needed for playback) Id of the playback controller used for common playback control. Use an ID of a video stream with which the audio source is associated.
 ///
@@ -1051,7 +1051,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) NSDictionary
 ///
 /// \param failureHandler The failure block which returns NSError
 ///
-+ (XPSDKRequest * _Nonnull)createBookmarkWithId:(NSString * _Nonnull)videoId text:(NSString * _Nonnull)text successHandler:(void (^ _Nullable)(XPSDKResponse * _Nullable))successHandler failureHandler:(void (^ _Nullable)(NSError * _Nullable))failureHandler;
++ (XPSDKRequest * _Nonnull)createBookmarkWithId:(NSString * _Nonnull)videoId text:(NSString * _Nonnull)text successHandler:(void (^ _Nullable)(XPSDKResponse * _Nullable))successHandler failureHandler:(void (^ _Nullable)(NSError * _Nullable))failureHandler SWIFT_DEPRECATED_MSG("Use func createBookmarkForVideo(withId videoId:cameraId:name:description:time:startTime:endTime:successHandler:failureHandler:)");
 /// Creates bookmark for a video
 /// More details about the CreatesBookmark command could be found in the Mobile Server Protocol documentation.
 /// \param videoId Id of the stream
@@ -1072,7 +1072,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) NSDictionary
 ///
 /// \param failureHandler The failure block which returns NSError
 ///
-+ (XPSDKRequest * _Nonnull)createBookmarkForVideoWithId:(NSString * _Nonnull)videoId cameraId:(NSString * _Nonnull)cameraId name:(NSString * _Nonnull)name description:(NSString * _Nullable)description time:(NSNumber * _Nonnull)time startTime:(NSNumber * _Nullable)startTime endTime:(NSNumber * _Nullable)endTime successHandler:(void (^ _Nullable)(XPSDKResponse * _Nullable))successHandler failureHandler:(void (^ _Nullable)(NSError * _Nullable))failureHandler;
++ (XPSDKRequest * _Nonnull)createBookmarkForVideoWithId:(NSString * _Nonnull)videoId cameraId:(NSString * _Nullable)cameraId name:(NSString * _Nonnull)name description:(NSString * _Nullable)description time:(NSNumber * _Nullable)time startTime:(NSNumber * _Nullable)startTime endTime:(NSNumber * _Nullable)endTime successHandler:(void (^ _Nullable)(XPSDKResponse * _Nullable))successHandler failureHandler:(void (^ _Nullable)(NSError * _Nullable))failureHandler;
 /// Updates the content of an existing bookmark
 /// More details about the UpdateBookmark command could be found in the Mobile Server Protocol documentation.
 /// \param bookmarkId Id of the bookmark
@@ -1103,7 +1103,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) NSDictionary
 + (XPSDKRequest * _Nonnull)deleteBookmarkWithId:(NSString * _Nonnull)bookmarkId successHandler:(void (^ _Nullable)(XPSDKResponse * _Nullable))successHandler failureHandler:(void (^ _Nullable)(NSError * _Nullable))failureHandler;
 /// Gets information about bookmark like pre/post time and reserve reference for its creation which can be used after that.
 /// More details about the RequestBookmarkCreation command could be found in the Mobile Server Protocol documentation.
-/// \param camerakId Id of the camera to bookmark
+/// \param cameraID Id of the camera to bookmark
 ///
 /// \param successHandler The success block which returns XPSDKResponse
 ///
@@ -1297,8 +1297,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) XPSDKConnection * _Non
 ///
 - (void)removeDelegate:(id <XPMobileSDKConnectionDelegate> _Nullable)delegate;
 - (void)explicitSetOfConnectionState:(NSNumber * _Nonnull)state;
-/// Updates application’s network activity indicator, depending on whether there is an request in execution, or an open video connection
-- (void)updateNetworkIndicator;
 + (void)resetSharedConnection;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -1901,6 +1899,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 + (NSString * _Nonnull)XPSDKConnectionRequestCreateBookmarkParamStartTime SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull XPSDKConnectionRequestCreateBookmarkParamEndTime;)
 + (NSString * _Nonnull)XPSDKConnectionRequestCreateBookmarkParamEndTime SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull XPSDKConnectionRequestCreateBookmarkParamMobileBookmark;)
++ (NSString * _Nonnull)XPSDKConnectionRequestCreateBookmarkParamMobileBookmark SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull XPSDKConnectionRequestNameGetThumbnail;)
 + (NSString * _Nonnull)XPSDKConnectionRequestNameGetThumbnail SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull XPSDKConnectionRequestGetThumbnailParamCameraId;)
@@ -1958,8 +1958,8 @@ SWIFT_CLASS("_TtC12MIPSDKMobile14XPSDKLiveVideo")
 @property (nonatomic, strong) id <XPSDKVideoConnectionDelegate> _Nullable videoConnectionDelegate;
 /// Constructs a new LiveVideo object instance.
 /// @param connection the connection to the Mobile server.
-/// @param receiver the object that implements VideoReceiver interface and will receive the Frames from the Mobile server.
-/// @param requestParams the parameters that will be included when the request is created.
+/// @param videoConnectionDelegate -  implementing this protocol it could be possible to receive videos and frames
+/// @param videoProperties - the properties for the video
 - (nonnull instancetype)initWithConnection:(XPSDKConnection * _Nonnull)connection videoConnectionDelegate:(id <XPSDKVideoConnectionDelegate> _Nonnull)videoConnectionDelegate videoProperties:(NSDictionary<NSString *, id> * _Nonnull)videoProperties;
 /// Requests a video from the Mobile server and if the request is successfully executed then it sets the value for the videoId variable.
 /// @return NSError object with the information of the fail request or nol if there is working video connection or successfully created.
@@ -2687,7 +2687,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) NSDictionary
 ///
 + (void)requestAudioStreamForMicrophoneId:(NSString * _Nonnull)micId playbackControllerId:(NSString * _Nullable)playbackControllerId investigationId:(NSString * _Nullable)investigationId audioEncoding:(NSString * _Nonnull)audioEncoding signalType:(NSString * _Nonnull)signalType methodType:(NSString * _Nonnull)methodType closeConnectionOnError:(NSString * _Nullable)closeConnectionOnError successHandler:(void (^ _Nullable)(XPSDKResponse * _Nullable))successHandler failureHandler:(void (^ _Nullable)(NSError * _Nullable))failureHandler;
 /// Request more sources in payback audio session
-/// \param itemId Ids of the devices, which stream is requested (GUID)
+/// \param itemIds Ids of the devices, which stream is requested (GUID)
 ///
 /// \param playbackControllerId (optional; needed for playback) Id of the playback controller used for common playback control. Use an ID of a video stream with which the audio source is associated.
 ///
@@ -3185,7 +3185,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) NSDictionary
 ///
 /// \param failureHandler The failure block which returns NSError
 ///
-+ (XPSDKRequest * _Nonnull)createBookmarkWithId:(NSString * _Nonnull)videoId text:(NSString * _Nonnull)text successHandler:(void (^ _Nullable)(XPSDKResponse * _Nullable))successHandler failureHandler:(void (^ _Nullable)(NSError * _Nullable))failureHandler;
++ (XPSDKRequest * _Nonnull)createBookmarkWithId:(NSString * _Nonnull)videoId text:(NSString * _Nonnull)text successHandler:(void (^ _Nullable)(XPSDKResponse * _Nullable))successHandler failureHandler:(void (^ _Nullable)(NSError * _Nullable))failureHandler SWIFT_DEPRECATED_MSG("Use func createBookmarkForVideo(withId videoId:cameraId:name:description:time:startTime:endTime:successHandler:failureHandler:)");
 /// Creates bookmark for a video
 /// More details about the CreatesBookmark command could be found in the Mobile Server Protocol documentation.
 /// \param videoId Id of the stream
@@ -3206,7 +3206,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) NSDictionary
 ///
 /// \param failureHandler The failure block which returns NSError
 ///
-+ (XPSDKRequest * _Nonnull)createBookmarkForVideoWithId:(NSString * _Nonnull)videoId cameraId:(NSString * _Nonnull)cameraId name:(NSString * _Nonnull)name description:(NSString * _Nullable)description time:(NSNumber * _Nonnull)time startTime:(NSNumber * _Nullable)startTime endTime:(NSNumber * _Nullable)endTime successHandler:(void (^ _Nullable)(XPSDKResponse * _Nullable))successHandler failureHandler:(void (^ _Nullable)(NSError * _Nullable))failureHandler;
++ (XPSDKRequest * _Nonnull)createBookmarkForVideoWithId:(NSString * _Nonnull)videoId cameraId:(NSString * _Nullable)cameraId name:(NSString * _Nonnull)name description:(NSString * _Nullable)description time:(NSNumber * _Nullable)time startTime:(NSNumber * _Nullable)startTime endTime:(NSNumber * _Nullable)endTime successHandler:(void (^ _Nullable)(XPSDKResponse * _Nullable))successHandler failureHandler:(void (^ _Nullable)(NSError * _Nullable))failureHandler;
 /// Updates the content of an existing bookmark
 /// More details about the UpdateBookmark command could be found in the Mobile Server Protocol documentation.
 /// \param bookmarkId Id of the bookmark
@@ -3237,7 +3237,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) NSDictionary
 + (XPSDKRequest * _Nonnull)deleteBookmarkWithId:(NSString * _Nonnull)bookmarkId successHandler:(void (^ _Nullable)(XPSDKResponse * _Nullable))successHandler failureHandler:(void (^ _Nullable)(NSError * _Nullable))failureHandler;
 /// Gets information about bookmark like pre/post time and reserve reference for its creation which can be used after that.
 /// More details about the RequestBookmarkCreation command could be found in the Mobile Server Protocol documentation.
-/// \param camerakId Id of the camera to bookmark
+/// \param cameraID Id of the camera to bookmark
 ///
 /// \param successHandler The success block which returns XPSDKResponse
 ///
@@ -3431,8 +3431,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) XPSDKConnection * _Non
 ///
 - (void)removeDelegate:(id <XPMobileSDKConnectionDelegate> _Nullable)delegate;
 - (void)explicitSetOfConnectionState:(NSNumber * _Nonnull)state;
-/// Updates application’s network activity indicator, depending on whether there is an request in execution, or an open video connection
-- (void)updateNetworkIndicator;
 + (void)resetSharedConnection;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -4035,6 +4033,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 + (NSString * _Nonnull)XPSDKConnectionRequestCreateBookmarkParamStartTime SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull XPSDKConnectionRequestCreateBookmarkParamEndTime;)
 + (NSString * _Nonnull)XPSDKConnectionRequestCreateBookmarkParamEndTime SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull XPSDKConnectionRequestCreateBookmarkParamMobileBookmark;)
++ (NSString * _Nonnull)XPSDKConnectionRequestCreateBookmarkParamMobileBookmark SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull XPSDKConnectionRequestNameGetThumbnail;)
 + (NSString * _Nonnull)XPSDKConnectionRequestNameGetThumbnail SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull XPSDKConnectionRequestGetThumbnailParamCameraId;)
@@ -4092,8 +4092,8 @@ SWIFT_CLASS("_TtC12MIPSDKMobile14XPSDKLiveVideo")
 @property (nonatomic, strong) id <XPSDKVideoConnectionDelegate> _Nullable videoConnectionDelegate;
 /// Constructs a new LiveVideo object instance.
 /// @param connection the connection to the Mobile server.
-/// @param receiver the object that implements VideoReceiver interface and will receive the Frames from the Mobile server.
-/// @param requestParams the parameters that will be included when the request is created.
+/// @param videoConnectionDelegate -  implementing this protocol it could be possible to receive videos and frames
+/// @param videoProperties - the properties for the video
 - (nonnull instancetype)initWithConnection:(XPSDKConnection * _Nonnull)connection videoConnectionDelegate:(id <XPSDKVideoConnectionDelegate> _Nonnull)videoConnectionDelegate videoProperties:(NSDictionary<NSString *, id> * _Nonnull)videoProperties;
 /// Requests a video from the Mobile server and if the request is successfully executed then it sets the value for the videoId variable.
 /// @return NSError object with the information of the fail request or nol if there is working video connection or successfully created.

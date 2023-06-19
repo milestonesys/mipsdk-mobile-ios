@@ -4,8 +4,8 @@
 
 #import <Foundation/Foundation.h>
 #import <CFNetwork/CFNetwork.h>
-#import "XPSDKVideoConnectionFrame.h"
-#import "XPSDKVideoConnection.h"
+#import <MIPSDKMobile/XPSDKVideoConnectionFrame.h>
+#import <MIPSDKMobile/XPSDKVideoConnection.h>
 
 @class XPSDKConnection;
 @class XPSDKResponse;

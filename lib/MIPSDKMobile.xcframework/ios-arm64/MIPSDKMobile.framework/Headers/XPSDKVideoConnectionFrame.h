@@ -9,7 +9,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import "XPSDKVideoConnection.h"
+#import <MIPSDKMobile/XPSDKVideoConnection.h>
 
 typedef enum {
     ///Flag indicating a 'size' header extension of frame

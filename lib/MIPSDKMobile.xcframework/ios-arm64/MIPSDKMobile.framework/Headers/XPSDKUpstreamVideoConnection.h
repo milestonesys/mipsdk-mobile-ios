@@ -5,8 +5,8 @@
 ///
 
 #import <Foundation/Foundation.h>
-#import "XPSDKVideoConnection.h"
-#import "XPSDKLocationData.h"
+#import <MIPSDKMobile/XPSDKVideoConnection.h>
+#import <MIPSDKMobile/XPSDKLocationData.h>
 #import <UIKit/UIKit.h>
 
 @protocol XPSDKUpstreamVideoConnectionDelegate;
@@ -16,7 +16,6 @@
     NSMutableURLRequest * request;
     
     unsigned int frameCounter;
-    float fps;
 }
 
 /// Flag that indicates that connection is ready for more data
@@ -42,6 +41,8 @@
 
 /// Flag that indicates if upstream is automatic
 @property (nonatomic) BOOL automatic;
+
+@property (nonatomic) float fps;
 
 - (XPSDKVideoConnectionMethod) method;
 

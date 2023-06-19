@@ -3184,28 +3184,6 @@
           },
           {
             "kind": "Function",
-            "name": "updateNetworkIndicator",
-            "printedName": "updateNetworkIndicator()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@MIPSDKMobile@objc(cs)XPSDKConnection(im)updateNetworkIndicator",
-            "mangledName": "$s12MIPSDKMobile15XPSDKConnectionC22updateNetworkIndicatoryyF",
-            "moduleName": "MIPSDKMobile",
-            "declAttributes": [
-              "AccessControl",
-              "ObjC",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
             "name": "resetSharedConnection",
             "printedName": "resetSharedConnection()",
             "children": [
@@ -19423,10 +19401,12 @@
             "mangledName": "$s12MIPSDKMobile11XPMobileSDKC14createBookmark6withId4text14successHandler07failureJ0AA12XPSDKRequestCSS_SSyAA13XPSDKResponseCSgcSgySo7NSErrorCSgcSgtFZ",
             "moduleName": "MIPSDKMobile",
             "static": true,
+            "deprecated": true,
             "isOpen": true,
             "declAttributes": [
               "AccessControl",
               "DiscardableResult",
+              "Available",
               "RawDocComment",
               "ObjC"
             ],
@@ -19451,9 +19431,18 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
@@ -19478,9 +19467,18 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "NSNumber",
-                "printedName": "Foundation.NSNumber",
-                "usr": "c:objc(cs)NSNumber"
+                "name": "Optional",
+                "printedName": "Foundation.NSNumber?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSNumber",
+                    "printedName": "Foundation.NSNumber",
+                    "usr": "c:objc(cs)NSNumber"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
@@ -19583,7 +19581,7 @@
             ],
             "declKind": "Func",
             "usr": "c:@M@MIPSDKMobile@objc(cs)XPMobileSDK(cm)createBookmarkForVideoWithId:cameraId:name:description:time:startTime:endTime:successHandler:failureHandler:",
-            "mangledName": "$s12MIPSDKMobile11XPMobileSDKC22createBookmarkForVideo6withId06cameraI04name11description4time9startTime03endO014successHandler07failureR0AA12XPSDKRequestCSS_S3SSgSo8NSNumberCARSgASyAA13XPSDKResponseCSgcSgySo7NSErrorCSgcSgtFZ",
+            "mangledName": "$s12MIPSDKMobile11XPMobileSDKC22createBookmarkForVideo6withId06cameraI04name11description4time9startTime03endO014successHandler07failureR0AA12XPSDKRequestCSS_SSSgSSAPSo8NSNumberCSgA2SyAA13XPSDKResponseCSgcSgySo7NSErrorCSgcSgtFZ",
             "moduleName": "MIPSDKMobile",
             "static": true,
             "isOpen": true,
@@ -33897,6 +33895,59 @@
           },
           {
             "kind": "Var",
+            "name": "XPSDKConnectionRequestCreateBookmarkParamMobileBookmark",
+            "printedName": "XPSDKConnectionRequestCreateBookmarkParamMobileBookmark",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MIPSDKMobile@objc(cs)XPSDKConstants(cpy)XPSDKConnectionRequestCreateBookmarkParamMobileBookmark",
+            "mangledName": "$s12MIPSDKMobile14XPSDKConstantsC047XPSDKConnectionRequestCreateBookmarkParamMobileF0SSvpZ",
+            "moduleName": "MIPSDKMobile",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MIPSDKMobile@objc(cs)XPSDKConstants(cm)XPSDKConnectionRequestCreateBookmarkParamMobileBookmark",
+                "mangledName": "$s12MIPSDKMobile14XPSDKConstantsC047XPSDKConnectionRequestCreateBookmarkParamMobileF0SSvgZ",
+                "moduleName": "MIPSDKMobile",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "XPSDKConnectionRequestNameGetThumbnail",
             "printedName": "XPSDKConnectionRequestNameGetThumbnail",
             "children": [
@@ -38217,112 +38268,119 @@
     {
       "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 20699,
+      "offset": 20711,
+      "length": 17,
+      "value": "\"Mobile bookmark\""
+    },
+    {
+      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 20803,
       "length": 20,
       "value": "\"GetThumbnailByTime\""
     },
     {
       "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 20798,
+      "offset": 20902,
       "length": 10,
       "value": "\"CameraId\""
     },
     {
       "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 20887,
+      "offset": 20991,
       "length": 10,
       "value": "\"SeekType\""
     },
     {
       "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 20973,
+      "offset": 21077,
       "length": 11,
       "value": "\"DestWidth\""
     },
     {
       "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 21061,
+      "offset": 21165,
       "length": 12,
       "value": "\"DestHeight\""
     },
     {
       "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 21148,
+      "offset": 21252,
       "length": 6,
       "value": "\"Time\""
     },
     {
       "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 21233,
+      "offset": 21337,
       "length": 10,
       "value": "\"TimeSpan\""
     },
     {
       "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 21329,
+      "offset": 21433,
       "length": 17,
       "value": "\"InvestigationId\""
     },
     {
       "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 21425,
+      "offset": 21529,
       "length": 18,
       "value": "\"RequestAudioPush\""
     },
     {
       "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 21503,
+      "offset": 21607,
       "length": 31,
       "value": "\"com.milestone.connectionerror\""
     },
     {
       "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 21612,
+      "offset": 21716,
       "length": 19,
       "value": "\"ServerProductCode\""
     },
     {
       "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 21704,
+      "offset": 21808,
       "length": 3,
       "value": "\"1\""
     },
     {
       "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 21780,
+      "offset": 21884,
       "length": 3,
       "value": "\"2\""
     },
     {
       "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 21854,
+      "offset": 21958,
       "length": 8,
       "value": "\"Server\""
     },
     {
       "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 21931,
+      "offset": 22035,
       "length": 17,
       "value": "\"Milestone Arcus\""
     },
     {
       "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 22017,
+      "offset": 22121,
       "length": 24,
       "value": "\"Milestone Husky Series\""
     },

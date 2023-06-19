@@ -80,7 +80,6 @@ import _StringProcessing
   @objc public func addDelegate(_ delegate: MIPSDKMobile.XPMobileSDKConnectionDelegate?)
   @objc public func removeDelegate(_ delegate: MIPSDKMobile.XPMobileSDKConnectionDelegate?)
   @objc public func explicitSetOfConnectionState(_ state: Foundation.NSNumber)
-  @objc public func updateNetworkIndicator()
   @objc public static func resetSharedConnection()
   public func sendCommand(name: Swift.String, parameters: [Swift.String : Swift.String]?, successHandler: MIPSDKMobile.SuccessResponse?, failureHandler: MIPSDKMobile.FailureBlock?)
   @objc override dynamic public init()
@@ -357,10 +356,11 @@ public enum Level : Swift.Int {
   open class func executeAccessControlSystemCommand(withEventId eventId: Swift.String, sourceObjectId: Swift.String, sourceKindId: Swift.String, successHandler: MIPSDKMobile.SuccessResponse?, failureHandler: MIPSDKMobile.FailureBlock?) -> MIPSDKMobile.XPSDKRequest
   @objc @discardableResult
   open class func getCameraCapabilities(withId cameraId: Swift.String, successHandler: MIPSDKMobile.SuccessResponse?, failureHandler: MIPSDKMobile.FailureBlock?) -> MIPSDKMobile.XPSDKRequest
-  @objc @discardableResult
+  @objc @available(*, deprecated, message: "Use func createBookmarkForVideo(withId videoId:cameraId:name:description:time:startTime:endTime:successHandler:failureHandler:)")
+  @discardableResult
   open class func createBookmark(withId videoId: Swift.String, text: Swift.String, successHandler: MIPSDKMobile.SuccessResponse?, failureHandler: MIPSDKMobile.FailureBlock?) -> MIPSDKMobile.XPSDKRequest
   @objc @discardableResult
-  open class func createBookmarkForVideo(withId videoId: Swift.String, cameraId: Swift.String, name: Swift.String, description: Swift.String? = nil, time: Foundation.NSNumber, startTime: Foundation.NSNumber? = nil, endTime: Foundation.NSNumber? = nil, successHandler: MIPSDKMobile.SuccessResponse?, failureHandler: MIPSDKMobile.FailureBlock?) -> MIPSDKMobile.XPSDKRequest
+  open class func createBookmarkForVideo(withId videoId: Swift.String, cameraId: Swift.String? = nil, name: Swift.String, description: Swift.String? = nil, time: Foundation.NSNumber? = nil, startTime: Foundation.NSNumber? = nil, endTime: Foundation.NSNumber? = nil, successHandler: MIPSDKMobile.SuccessResponse?, failureHandler: MIPSDKMobile.FailureBlock?) -> MIPSDKMobile.XPSDKRequest
   @objc @discardableResult
   open class func updateBookmark(withId bookmarkId: Swift.String, name: Swift.String, description: Swift.String? = nil, time: Foundation.NSNumber? = nil, startTime: Foundation.NSNumber? = nil, endTime: Foundation.NSNumber? = nil, successHandler: MIPSDKMobile.SuccessResponse?, failureHandler: MIPSDKMobile.FailureBlock?) -> MIPSDKMobile.XPSDKRequest
   @objc @discardableResult
@@ -641,6 +641,7 @@ extension MIPSDKMobile.XPSDKConnection {
   @objc public static let XPSDKConnectionRequestCreateBookmarkParamTime: Swift.String
   @objc public static let XPSDKConnectionRequestCreateBookmarkParamStartTime: Swift.String
   @objc public static let XPSDKConnectionRequestCreateBookmarkParamEndTime: Swift.String
+  @objc public static let XPSDKConnectionRequestCreateBookmarkParamMobileBookmark: Swift.String
   @objc public static let XPSDKConnectionRequestNameGetThumbnail: Swift.String
   @objc public static let XPSDKConnectionRequestGetThumbnailParamCameraId: Swift.String
   @objc public static let XPSDKConnectionRequestGetThumbnailParamSeekType: Swift.String
