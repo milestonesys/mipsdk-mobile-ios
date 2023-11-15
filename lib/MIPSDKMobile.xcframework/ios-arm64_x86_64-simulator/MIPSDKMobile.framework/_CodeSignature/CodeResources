@@ -70,7 +70,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		1NJGONIrCchDiRx0gkSYdE7bFGY=
+		X3Q+IFZtlmFR/mFBhbAx0N8P9fc=
 		</data>
 		<key>Modules/MIPSDKMobile.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -90,7 +90,7 @@
 		</data>
 		<key>Modules/MIPSDKMobile.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		UzNpeyLtG2vVKpmYAXx3bmIF7aI=
+		kypLadCWwIS4TP5FeFb5U+Ki8sA=
 		</data>
 		<key>Modules/MIPSDKMobile.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -110,7 +110,7 @@
 		</data>
 		<key>Modules/MIPSDKMobile.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Izwkwy+FAlaNVvZH2aceJlfKz3o=
+		FOtU/waoG10LRhFpbIaJOde3a8c=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -267,7 +267,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			NnoZKtHlS3VsLCpTxgKPJqypvo8RV+1oBNR078mTaUI=
+			oM1r0E2q88IssOGFwvICGEsmQbykGyOmga9TKt3GZKI=
 			</data>
 		</dict>
 		<key>Modules/MIPSDKMobile.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
@@ -302,7 +302,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			x35OK7Nzy+4ufexiIJVPVrePSH3SDxSpyv+10hzk43Y=
+			FAzMK9hV7k3yO0b8v7WTuODsaH7WgLw6tBIpD/PWExo=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
