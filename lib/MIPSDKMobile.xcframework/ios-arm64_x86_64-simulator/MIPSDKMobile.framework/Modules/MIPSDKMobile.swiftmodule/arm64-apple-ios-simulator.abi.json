@@ -1,8 +1,8 @@
 {
   "ABIRoot": {
     "kind": "Root",
-    "name": "TopLevel",
-    "printedName": "TopLevel",
+    "name": "MIPSDKMobile",
+    "printedName": "MIPSDKMobile",
     "children": [
       {
         "kind": "Import",
@@ -441,6 +441,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -860,6 +874,20 @@
         ],
         "enumRawTypeName": "Int",
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -1394,6 +1422,22 @@
           "AccessControl",
           "ObjC",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -2820,6 +2864,128 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "communicationChannel",
+            "printedName": "communicationChannel",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MIPSDKMobile@objc(cs)XPSDKConnection(py)communicationChannel",
+            "mangledName": "$s12MIPSDKMobile15XPSDKConnectionC20communicationChannelSSSgvp",
+            "moduleName": "MIPSDKMobile",
+            "isOpen": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MIPSDKMobile@objc(cs)XPSDKConnection(im)communicationChannel",
+                "mangledName": "$s12MIPSDKMobile15XPSDKConnectionC20communicationChannelSSSgvg",
+                "moduleName": "MIPSDKMobile",
+                "implicit": true,
+                "isOpen": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MIPSDKMobile@objc(cs)XPSDKConnection(im)setCommunicationChannel:",
+                "mangledName": "$s12MIPSDKMobile15XPSDKConnectionC20communicationChannelSSSgvs",
+                "moduleName": "MIPSDKMobile",
+                "implicit": true,
+                "isOpen": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12MIPSDKMobile15XPSDKConnectionC20communicationChannelSSSgvM",
+                "mangledName": "$s12MIPSDKMobile15XPSDKConnectionC20communicationChannelSSSgvM",
+                "moduleName": "MIPSDKMobile",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
             "kind": "Function",
             "name": "setupWithURLString",
             "printedName": "setupWithURLString(_:uuid:serviceAlias:)",
@@ -3096,12 +3262,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "MIPSDKMobile.XPMobileSDKConnectionDelegate?",
+                "printedName": "(any MIPSDKMobile.XPMobileSDKConnectionDelegate)?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "XPMobileSDKConnectionDelegate",
-                    "printedName": "MIPSDKMobile.XPMobileSDKConnectionDelegate",
+                    "printedName": "any MIPSDKMobile.XPMobileSDKConnectionDelegate",
                     "usr": "c:@M@MIPSDKMobile@objc(pl)XPMobileSDKConnectionDelegate"
                   }
                 ],
@@ -3132,12 +3298,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "MIPSDKMobile.XPMobileSDKConnectionDelegate?",
+                "printedName": "(any MIPSDKMobile.XPMobileSDKConnectionDelegate)?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "XPMobileSDKConnectionDelegate",
-                    "printedName": "MIPSDKMobile.XPMobileSDKConnectionDelegate",
+                    "printedName": "any MIPSDKMobile.XPMobileSDKConnectionDelegate",
                     "usr": "c:@M@MIPSDKMobile@objc(pl)XPMobileSDKConnectionDelegate"
                   }
                 ],
@@ -7135,6 +7301,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -7967,12 +8147,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "MIPSDKMobile.XPSDKVideoConnectionDelegate?",
+                "printedName": "(any MIPSDKMobile.XPSDKVideoConnectionDelegate)?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "XPSDKVideoConnectionDelegate",
-                    "printedName": "MIPSDKMobile.XPSDKVideoConnectionDelegate",
+                    "printedName": "any MIPSDKMobile.XPSDKVideoConnectionDelegate",
                     "usr": "c:objc(pl)XPSDKVideoConnectionDelegate"
                   }
                 ],
@@ -8001,12 +8181,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "MIPSDKMobile.XPSDKVideoConnectionDelegate?",
+                    "printedName": "(any MIPSDKMobile.XPSDKVideoConnectionDelegate)?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "XPSDKVideoConnectionDelegate",
-                        "printedName": "MIPSDKMobile.XPSDKVideoConnectionDelegate",
+                        "printedName": "any MIPSDKMobile.XPSDKVideoConnectionDelegate",
                         "usr": "c:objc(pl)XPSDKVideoConnectionDelegate"
                       }
                     ],
@@ -8037,12 +8217,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "MIPSDKMobile.XPSDKVideoConnectionDelegate?",
+                    "printedName": "(any MIPSDKMobile.XPSDKVideoConnectionDelegate)?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "XPSDKVideoConnectionDelegate",
-                        "printedName": "MIPSDKMobile.XPSDKVideoConnectionDelegate",
+                        "printedName": "any MIPSDKMobile.XPSDKVideoConnectionDelegate",
                         "usr": "c:objc(pl)XPSDKVideoConnectionDelegate"
                       }
                     ],
@@ -8101,7 +8281,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "XPSDKVideoConnectionDelegate",
-                "printedName": "MIPSDKMobile.XPSDKVideoConnectionDelegate",
+                "printedName": "any MIPSDKMobile.XPSDKVideoConnectionDelegate",
                 "usr": "c:objc(pl)XPSDKVideoConnectionDelegate"
               },
               {
@@ -8314,6 +8494,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -8838,12 +9032,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "MIPSDKMobile.XPSDKVideoConnectionDelegate?",
+                "printedName": "(any MIPSDKMobile.XPSDKVideoConnectionDelegate)?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "XPSDKVideoConnectionDelegate",
-                    "printedName": "MIPSDKMobile.XPSDKVideoConnectionDelegate",
+                    "printedName": "any MIPSDKMobile.XPSDKVideoConnectionDelegate",
                     "usr": "c:objc(pl)XPSDKVideoConnectionDelegate"
                   }
                 ],
@@ -8872,12 +9066,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "MIPSDKMobile.XPSDKVideoConnectionDelegate?",
+                    "printedName": "(any MIPSDKMobile.XPSDKVideoConnectionDelegate)?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "XPSDKVideoConnectionDelegate",
-                        "printedName": "MIPSDKMobile.XPSDKVideoConnectionDelegate",
+                        "printedName": "any MIPSDKMobile.XPSDKVideoConnectionDelegate",
                         "usr": "c:objc(pl)XPSDKVideoConnectionDelegate"
                       }
                     ],
@@ -8908,12 +9102,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "MIPSDKMobile.XPSDKVideoConnectionDelegate?",
+                    "printedName": "(any MIPSDKMobile.XPSDKVideoConnectionDelegate)?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "XPSDKVideoConnectionDelegate",
-                        "printedName": "MIPSDKMobile.XPSDKVideoConnectionDelegate",
+                        "printedName": "any MIPSDKMobile.XPSDKVideoConnectionDelegate",
                         "usr": "c:objc(pl)XPSDKVideoConnectionDelegate"
                       }
                     ],
@@ -9192,6 +9386,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -10311,17 +10519,17 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "Swift.UnsafePointer<Foundation.NSCopying>?",
+                "printedName": "Swift.UnsafePointer<any Foundation.NSCopying>?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "UnsafePointer",
-                    "printedName": "Swift.UnsafePointer<Foundation.NSCopying>",
+                    "printedName": "Swift.UnsafePointer<any Foundation.NSCopying>",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "NSCopying",
-                        "printedName": "Foundation.NSCopying",
+                        "printedName": "any Foundation.NSCopying",
                         "usr": "c:objc(pl)NSCopying"
                       }
                     ],
@@ -10409,6 +10617,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -10948,6 +11170,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -11147,6 +11383,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -11578,6 +11828,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -11839,6 +12103,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -11885,6 +12163,13 @@
             "printedName": "CustomDebugStringConvertible",
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           }
         ]
       },
@@ -20402,7 +20687,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "XPMobileSDKConnectionDelegate",
-                "printedName": "MIPSDKMobile.XPMobileSDKConnectionDelegate",
+                "printedName": "any MIPSDKMobile.XPMobileSDKConnectionDelegate",
                 "usr": "c:@M@MIPSDKMobile@objc(pl)XPMobileSDKConnectionDelegate"
               }
             ],
@@ -20432,7 +20717,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "XPMobileSDKConnectionDelegate",
-                "printedName": "MIPSDKMobile.XPMobileSDKConnectionDelegate",
+                "printedName": "any MIPSDKMobile.XPMobileSDKConnectionDelegate",
                 "usr": "c:@M@MIPSDKMobile@objc(pl)XPMobileSDKConnectionDelegate"
               }
             ],
@@ -20620,6 +20905,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -21056,6 +21355,59 @@
                 "declKind": "Accessor",
                 "usr": "c:@M@MIPSDKMobile@objc(cs)XPSDKConstants(cm)XPSDKChangePasswordRelativePath",
                 "mangledName": "$s12MIPSDKMobile14XPSDKConstantsC31XPSDKChangePasswordRelativePathSSvgZ",
+                "moduleName": "MIPSDKMobile",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "XPSDKCommunicationChanel",
+            "printedName": "XPSDKCommunicationChanel",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MIPSDKMobile@objc(cs)XPSDKConstants(cpy)XPSDKCommunicationChanel",
+            "mangledName": "$s12MIPSDKMobile14XPSDKConstantsC24XPSDKCommunicationChanelSSvpZ",
+            "moduleName": "MIPSDKMobile",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MIPSDKMobile@objc(cs)XPSDKConstants(cm)XPSDKCommunicationChanel",
+                "mangledName": "$s12MIPSDKMobile14XPSDKConstantsC24XPSDKCommunicationChanelSSvgZ",
                 "moduleName": "MIPSDKMobile",
                 "static": true,
                 "implicit": true,
@@ -34838,6 +35190,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -35755,6 +36121,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -35809,2590 +36189,2275 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConnection.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConnection.swift",
       "kind": "IntegerLiteral",
       "offset": 257,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConnection.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConnection.swift",
       "kind": "IntegerLiteral",
       "offset": 348,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConnection.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConnection.swift",
       "kind": "IntegerLiteral",
       "offset": 440,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConnection.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConnection.swift",
       "kind": "IntegerLiteral",
       "offset": 524,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConnection.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConnection.swift",
       "kind": "IntegerLiteral",
       "offset": 616,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConnection.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConnection.swift",
       "kind": "IntegerLiteral",
       "offset": 693,
       "length": 1,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConnection.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConnection.swift",
       "kind": "IntegerLiteral",
       "offset": 820,
       "length": 1,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConnection.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConnection.swift",
       "kind": "IntegerLiteral",
       "offset": 934,
       "length": 1,
       "value": "7"
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConnection.swift",
-      "kind": "IntegerLiteral",
-      "offset": 257,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConnection.swift",
-      "kind": "IntegerLiteral",
-      "offset": 348,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConnection.swift",
-      "kind": "IntegerLiteral",
-      "offset": 440,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConnection.swift",
-      "kind": "IntegerLiteral",
-      "offset": 524,
-      "length": 1,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConnection.swift",
-      "kind": "IntegerLiteral",
-      "offset": 616,
-      "length": 1,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConnection.swift",
-      "kind": "IntegerLiteral",
-      "offset": 693,
-      "length": 1,
-      "value": "5"
-    },
-    {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConnection.swift",
-      "kind": "IntegerLiteral",
-      "offset": 820,
-      "length": 1,
-      "value": "6"
-    },
-    {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConnection.swift",
-      "kind": "IntegerLiteral",
-      "offset": 934,
-      "length": 1,
-      "value": "7"
-    },
-    {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConnection.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConnection.swift",
       "kind": "IntegerLiteral",
       "offset": 1123,
       "length": 2,
       "value": "25"
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConnection.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConnection.swift",
       "kind": "IntegerLiteral",
       "offset": 1214,
       "length": 2,
       "value": "34"
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConnection.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConnection.swift",
       "kind": "IntegerLiteral",
       "offset": 1327,
       "length": 2,
       "value": "35"
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConnection.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConnection.swift",
       "kind": "IntegerLiteral",
       "offset": 1427,
       "length": 2,
       "value": "36"
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConnection.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1123,
-      "length": 2,
-      "value": "25"
-    },
-    {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConnection.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1214,
-      "length": 2,
-      "value": "34"
-    },
-    {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConnection.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1327,
-      "length": 2,
-      "value": "35"
-    },
-    {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConnection.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1427,
-      "length": 2,
-      "value": "36"
-    },
-    {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConnection.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1123,
-      "length": 2,
-      "value": "25"
-    },
-    {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConnection.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1214,
-      "length": 2,
-      "value": "34"
-    },
-    {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConnection.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1327,
-      "length": 2,
-      "value": "35"
-    },
-    {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConnection.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1427,
-      "length": 2,
-      "value": "36"
-    },
-    {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConnection.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConnection.swift",
       "kind": "IntegerLiteral",
       "offset": 1589,
       "length": 4,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConnection.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConnection.swift",
       "kind": "IntegerLiteral",
       "offset": 1628,
       "length": 4,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConnection.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConnection.swift",
       "kind": "IntegerLiteral",
       "offset": 1668,
       "length": 5,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConnection.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConnection.swift",
       "kind": "IntegerLiteral",
       "offset": 1706,
       "length": 6,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConnection.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConnection.swift",
       "kind": "IntegerLiteral",
       "offset": 1746,
       "length": 7,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConnection.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConnection.swift",
       "kind": "IntegerLiteral",
       "offset": 1819,
       "length": 4,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConnection.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1589,
-      "length": 4,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConnection.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1628,
-      "length": 4,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConnection.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1668,
-      "length": 5,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConnection.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1706,
-      "length": 6,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConnection.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1746,
-      "length": 7,
-      "value": "5"
-    },
-    {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConnection.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1819,
-      "length": 4,
-      "value": "6"
-    },
-    {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConnection.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConnection.swift",
       "kind": "BooleanLiteral",
       "offset": 5794,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConnection.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConnection.swift",
       "kind": "IntegerLiteral",
       "offset": 6285,
       "length": 2,
       "value": "30"
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConnection.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConnection.swift",
       "kind": "BooleanLiteral",
       "offset": 7233,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKVideoFactory.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKVideoFactory.swift",
       "kind": "IntegerLiteral",
       "offset": 598,
       "length": 2,
       "value": "73"
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKVideoFactory.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKVideoFactory.swift",
       "kind": "IntegerLiteral",
       "offset": 696,
       "length": 1,
       "value": "8"
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKVideoFactory.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKVideoFactory.swift",
       "kind": "BooleanLiteral",
       "offset": 993,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKVideoFactory.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKVideoFactory.swift",
       "kind": "BooleanLiteral",
       "offset": 1162,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKVideoFactory.swift",
-      "kind": "StringLiteral",
-      "offset": 248,
-      "length": 17,
-      "value": "\"MIPSDKMobile.XPSDKVideoFactory\""
-    },
-    {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKResponse.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKResponse.swift",
       "kind": "BooleanLiteral",
       "offset": 642,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKResponse.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKResponse.swift",
       "kind": "BooleanLiteral",
       "offset": 706,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConnection+Connect.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConnection+Connect.swift",
       "kind": "IntegerLiteral",
       "offset": 291,
       "length": 2,
-      "value": "1"
+      "value": "-1"
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConnection+Connect.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConnection+Connect.swift",
       "kind": "IntegerLiteral",
       "offset": 343,
       "length": 2,
-      "value": "2"
+      "value": "-2"
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConnection+Connect.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConnection+Connect.swift",
       "kind": "IntegerLiteral",
       "offset": 398,
       "length": 2,
-      "value": "3"
+      "value": "-3"
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConnection+Connect.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConnection+Connect.swift",
       "kind": "IntegerLiteral",
       "offset": 458,
       "length": 2,
-      "value": "7"
+      "value": "-7"
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConnection+Connect.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConnection+Connect.swift",
       "kind": "IntegerLiteral",
       "offset": 527,
       "length": 2,
       "value": "25"
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConnection+Connect.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConnection+Connect.swift",
       "kind": "IntegerLiteral",
       "offset": 582,
       "length": 4,
-      "value": "999"
+      "value": "-999"
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConnection+Connect.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConnection+Connect.swift",
       "kind": "IntegerLiteral",
       "offset": 668,
       "length": 2,
-      "value": "5"
+      "value": "-5"
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConnection+Connect.swift",
-      "kind": "IntegerLiteral",
-      "offset": 291,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConnection+Connect.swift",
-      "kind": "IntegerLiteral",
-      "offset": 343,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConnection+Connect.swift",
-      "kind": "IntegerLiteral",
-      "offset": 398,
-      "length": 1,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConnection+Connect.swift",
-      "kind": "IntegerLiteral",
-      "offset": 458,
-      "length": 1,
-      "value": "7"
-    },
-    {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConnection+Connect.swift",
-      "kind": "IntegerLiteral",
-      "offset": 527,
-      "length": 2,
-      "value": "25"
-    },
-    {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConnection+Connect.swift",
-      "kind": "IntegerLiteral",
-      "offset": 582,
-      "length": 1,
-      "value": "999"
-    },
-    {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConnection+Connect.swift",
-      "kind": "IntegerLiteral",
-      "offset": 668,
-      "length": 1,
-      "value": "5"
-    },
-    {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConnectionMethod.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConnectionMethod.swift",
       "kind": "StringLiteral",
       "offset": 291,
       "length": 19,
       "value": "\"ReconnectionError\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConnectionMethod.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConnectionMethod.swift",
       "kind": "IntegerLiteral",
       "offset": 373,
       "length": 6,
-      "value": "11112"
+      "value": "-11112"
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKLogger.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKLogger.swift",
       "kind": "IntegerLiteral",
       "offset": 225,
       "length": 5,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKLogger.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKLogger.swift",
       "kind": "IntegerLiteral",
       "offset": 252,
       "length": 4,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKLogger.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKLogger.swift",
       "kind": "IntegerLiteral",
       "offset": 281,
       "length": 7,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKLogger.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKLogger.swift",
       "kind": "IntegerLiteral",
       "offset": 311,
       "length": 5,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKLogger.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKLogger.swift",
       "kind": "IntegerLiteral",
       "offset": 340,
       "length": 6,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKLogger.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKLogger.swift",
       "kind": "IntegerLiteral",
       "offset": 368,
       "length": 4,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKLogger.swift",
-      "kind": "IntegerLiteral",
-      "offset": 225,
-      "length": 5,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKLogger.swift",
-      "kind": "IntegerLiteral",
-      "offset": 252,
-      "length": 4,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKLogger.swift",
-      "kind": "IntegerLiteral",
-      "offset": 281,
-      "length": 7,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKLogger.swift",
-      "kind": "IntegerLiteral",
-      "offset": 311,
-      "length": 5,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKLogger.swift",
-      "kind": "IntegerLiteral",
-      "offset": 340,
-      "length": 6,
-      "value": "5"
-    },
-    {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKLogger.swift",
-      "kind": "IntegerLiteral",
-      "offset": 368,
-      "length": 4,
-      "value": "6"
-    },
-    {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKLogger.swift",
-      "kind": "IntegerLiteral",
-      "offset": 225,
-      "length": 5,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKLogger.swift",
-      "kind": "IntegerLiteral",
-      "offset": 252,
-      "length": 4,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKLogger.swift",
-      "kind": "IntegerLiteral",
-      "offset": 281,
-      "length": 7,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKLogger.swift",
-      "kind": "IntegerLiteral",
-      "offset": 311,
-      "length": 5,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKLogger.swift",
-      "kind": "IntegerLiteral",
-      "offset": 340,
-      "length": 6,
-      "value": "5"
-    },
-    {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKLogger.swift",
-      "kind": "IntegerLiteral",
-      "offset": 368,
-      "length": 4,
-      "value": "6"
-    },
-    {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKLogger.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKLogger.swift",
       "kind": "BooleanLiteral",
       "offset": 931,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKLogger.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKLogger.swift",
       "kind": "BooleanLiteral",
       "offset": 955,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKLogger.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKLogger.swift",
       "kind": "BooleanLiteral",
       "offset": 980,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKLogger.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKLogger.swift",
       "kind": "BooleanLiteral",
       "offset": 1010,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKLogger.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKLogger.swift",
       "kind": "BooleanLiteral",
       "offset": 1038,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKLogger.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKLogger.swift",
       "kind": "BooleanLiteral",
       "offset": 1068,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKLogger.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKLogger.swift",
       "kind": "BooleanLiteral",
       "offset": 1100,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKRequest.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKRequest.swift",
       "kind": "IntegerLiteral",
       "offset": 465,
       "length": 2,
-      "value": "2"
+      "value": "-2"
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKRequest.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKRequest.swift",
       "kind": "IntegerLiteral",
       "offset": 497,
       "length": 2,
       "value": "12"
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKRequest.swift",
-      "kind": "IntegerLiteral",
-      "offset": 465,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKRequest.swift",
-      "kind": "IntegerLiteral",
-      "offset": 497,
-      "length": 2,
-      "value": "12"
-    },
-    {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKRequest.swift",
-      "kind": "IntegerLiteral",
-      "offset": 465,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKRequest.swift",
-      "kind": "IntegerLiteral",
-      "offset": 497,
-      "length": 2,
-      "value": "12"
-    },
-    {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKRequest.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKRequest.swift",
       "kind": "StringLiteral",
       "offset": 999,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKRequest.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKRequest.swift",
       "kind": "IntegerLiteral",
       "offset": 1068,
       "length": 2,
-      "value": "1"
+      "value": "-1"
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKRequest.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKRequest.swift",
       "kind": "BooleanLiteral",
       "offset": 1208,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKRequest.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKRequest.swift",
       "kind": "IntegerLiteral",
       "offset": 1476,
       "length": 2,
-      "value": "1"
+      "value": "-1"
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
       "offset": 266,
       "length": 5,
       "value": "\"Yes\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
       "offset": 316,
       "length": 4,
       "value": "\"No\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
       "offset": 366,
       "length": 11,
       "value": "\"PublicKey\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
       "offset": 422,
       "length": 10,
       "value": "\"DeviceId\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
       "offset": 478,
       "length": 13,
       "value": "\"PrimeLength\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
       "offset": 540,
       "length": 14,
       "value": "\"ConnectionId\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
       "offset": 617,
       "length": 28,
       "value": "\"ChangePasswordRelativePath\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 690,
+      "offset": 701,
+      "length": 21,
+      "value": "\"CommunicationChanel\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 767,
       "length": 10,
       "value": "\"ServerId\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 744,
+      "offset": 821,
       "length": 9,
       "value": "\"Timeout\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 797,
+      "offset": 874,
       "length": 9,
       "value": "\"Connect\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 851,
+      "offset": 928,
       "length": 10,
       "value": "\"Username\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 906,
+      "offset": 983,
       "length": 10,
       "value": "\"Password\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 964,
+      "offset": 1041,
       "length": 13,
       "value": "\"IdpClientId\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1025,
+      "offset": 1102,
       "length": 13,
       "value": "\"AccessToken\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1087,
+      "offset": 1164,
       "length": 14,
       "value": "\"RefreshToken\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1151,
+      "offset": 1228,
       "length": 15,
       "value": "\"IdentityToken\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1212,
+      "offset": 1289,
       "length": 11,
       "value": "\"LoginType\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1275,
+      "offset": 1352,
       "length": 7,
       "value": "\"Basic\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1336,
+      "offset": 1413,
       "length": 17,
       "value": "\"ActiveDirectory\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1408,
+      "offset": 1485,
       "length": 10,
       "value": "\"External\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1471,
+      "offset": 1548,
       "length": 18,
       "value": "\"CollectUsageData\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1553,
+      "offset": 1630,
       "length": 29,
       "value": "\"SecondStepAuthenticationPin\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1637,
+      "offset": 1714,
       "length": 20,
       "value": "\"SupportsResampling\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1726,
+      "offset": 1803,
       "length": 34,
       "value": "\"SupportsExtendedResamplingFactor\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1807,
+      "offset": 1884,
       "length": 12,
       "value": "\"ClientType\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1872,
+      "offset": 1949,
       "length": 18,
       "value": "\"SupportsSmartMap\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1942,
+      "offset": 2019,
       "length": 17,
       "value": "\"SupportsAudioIn\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2012,
+      "offset": 2089,
       "length": 18,
       "value": "\"SupportsAudioOut\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2092,
+      "offset": 2169,
       "length": 27,
       "value": "\"SupportsAdaptiveStreaming\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2168,
+      "offset": 2245,
       "length": 14,
       "value": "\"MobileClient\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2224,
+      "offset": 2301,
       "length": 7,
       "value": "\"LogIn\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2279,
+      "offset": 2356,
       "length": 13,
       "value": "\"LiveMessage\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2358,
+      "offset": 2435,
       "length": 16,
       "value": "\"XProtectMobile\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2436,
+      "offset": 2513,
       "length": 54,
       "value": "\"\/\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2475,
+      "offset": 2552,
       "length": 1,
       "value": "\"\/Communication\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2561,
+      "offset": 2638,
       "length": 36,
       "value": "\"RequestSecondStepAuthenticationPin\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2644,
+      "offset": 2721,
       "length": 12,
       "value": "\"Disconnect\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2726,
+      "offset": 2803,
       "length": 35,
       "value": "\"VerifySecondStepAuthenticationPin\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2819,
+      "offset": 2896,
       "length": 23,
       "value": "\"GetAllViewsAndCameras\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2887,
+      "offset": 2964,
       "length": 10,
       "value": "\"GetViews\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2953,
+      "offset": 3030,
       "length": 8,
       "value": "\"ViewId\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3015,
+      "offset": 3092,
       "length": 19,
       "value": "\"GetPermittedUsers\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3090,
+      "offset": 3167,
       "length": 26,
       "value": "\"XPSDKResponseErrorDomain\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3166,
+      "offset": 3243,
       "length": 15,
       "value": "\"Communication\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3225,
+      "offset": 3302,
       "length": 9,
       "value": "\"Command\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3287,
+      "offset": 3364,
       "length": 18,
       "value": "\"EncryptedCommand\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3347,
+      "offset": 3424,
       "length": 7,
       "value": "\"value\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3396,
+      "offset": 3473,
       "length": 7,
       "value": "\"Value\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3444,
+      "offset": 3521,
       "length": 6,
       "value": "\"Name\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3491,
+      "offset": 3568,
       "length": 6,
       "value": "\"Type\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3545,
+      "offset": 3622,
       "length": 10,
       "value": "\"Response\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3602,
+      "offset": 3679,
       "length": 12,
       "value": "\"Processing\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3663,
+      "offset": 3740,
       "length": 14,
       "value": "\"OutputParams\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3719,
+      "offset": 3796,
       "length": 7,
       "value": "\"Param\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3771,
+      "offset": 3848,
       "length": 10,
       "value": "\"SubItems\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3827,
+      "offset": 3904,
       "length": 11,
       "value": "\"Sequences\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3888,
+      "offset": 3965,
       "length": 15,
       "value": "\"OEHeaderGroup\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3947,
+      "offset": 4024,
       "length": 9,
       "value": "\"Exports\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3998,
+      "offset": 4075,
       "length": 7,
       "value": "\"Items\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4046,
+      "offset": 4123,
       "length": 6,
       "value": "\"Item\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4094,
+      "offset": 4171,
       "length": 7,
       "value": "\"Alarm\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4154,
+      "offset": 4231,
       "length": 18,
       "value": "\"AlarmDataSetting\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4221,
+      "offset": 4298,
       "length": 14,
       "value": "\"Notification\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4278,
+      "offset": 4355,
       "length": 8,
       "value": "\"Result\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4325,
+      "offset": 4402,
       "length": 4,
       "value": "\"OK\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4377,
+      "offset": 4454,
       "length": 13,
       "value": "\"ErrorString\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4436,
+      "offset": 4513,
       "length": 11,
       "value": "\"ErrorCode\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4486,
+      "offset": 4563,
       "length": 4,
       "value": "\"Id\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4546,
+      "offset": 4623,
       "length": 26,
       "value": "\"XPSDKRequestDefaultError\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4624,
+      "offset": 4701,
       "length": 22,
       "value": "\"XPSDKRequestXMLParse\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4717,
+      "offset": 4794,
       "length": 41,
       "value": "\"kNetworkReachabilityChangedNotification\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4814,
+      "offset": 4891,
       "length": 21,
       "value": "\"GetOutputsAndEvents\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4895,
+      "offset": 4972,
       "length": 10,
       "value": "\"CameraId\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4959,
+      "offset": 5036,
       "length": 19,
       "value": "\"RequestActivation\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 5045,
+      "offset": 5122,
       "length": 10,
       "value": "\"ObjectId\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 5125,
+      "offset": 5202,
       "length": 13,
       "value": "\"TriggerType\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 5184,
+      "offset": 5261,
       "length": 14,
       "value": "\"GetAlarmList\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 5257,
+      "offset": 5334,
       "length": 5,
       "value": "\"Yes\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 5320,
+      "offset": 5397,
       "length": 4,
       "value": "\"No\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 5383,
+      "offset": 5460,
       "length": 10,
       "value": "\"MyAlarms\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 5452,
+      "offset": 5529,
       "length": 10,
       "value": "\"Operator\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 5522,
+      "offset": 5599,
       "length": 11,
       "value": "\"Timestamp\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 5589,
+      "offset": 5666,
       "length": 7,
       "value": "\"State\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 5655,
+      "offset": 5732,
       "length": 10,
       "value": "\"Priority\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 5721,
+      "offset": 5798,
       "length": 7,
       "value": "\"Count\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 5785,
+      "offset": 5862,
       "length": 22,
       "value": "\"GetAlarmDataSettings\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 5860,
+      "offset": 5937,
       "length": 9,
       "value": "\"AlarmId\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 5917,
+      "offset": 5994,
       "length": 13,
       "value": "\"UpdateAlarm\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 5990,
+      "offset": 6067,
       "length": 4,
       "value": "\"Id\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 6047,
+      "offset": 6124,
       "length": 18,
       "value": "\"AcknowledgeAlarm\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 6125,
+      "offset": 6202,
       "length": 4,
       "value": "\"Id\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 6185,
+      "offset": 6262,
       "length": 21,
       "value": "\"CreateInvestigation\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 6271,
+      "offset": 6348,
       "length": 6,
       "value": "\"Name\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 6346,
+      "offset": 6423,
       "length": 10,
       "value": "\"CameraId\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 6426,
+      "offset": 6503,
       "length": 11,
       "value": "\"StartTime\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 6505,
+      "offset": 6582,
       "length": 9,
       "value": "\"EndTime\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 6567,
+      "offset": 6644,
       "length": 18,
       "value": "\"GetInvestigation\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 6645,
+      "offset": 6722,
       "length": 8,
       "value": "\"ItemId\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 6709,
+      "offset": 6786,
       "length": 21,
       "value": "\"DeleteInvestigation\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 6792,
+      "offset": 6869,
       "length": 27,
       "value": "\"DeleteInvestigationExport\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 6888,
+      "offset": 6965,
       "length": 17,
       "value": "\"InvestigationId\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 6982,
+      "offset": 7059,
       "length": 12,
       "value": "\"ExportType\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 7045,
+      "offset": 7122,
       "length": 16,
       "value": "\"GetTileServers\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 7137,
+      "offset": 7214,
       "length": 15,
       "value": "\"RequestStream\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 7225,
+      "offset": 7302,
       "length": 10,
       "value": "\"CameraId\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 7315,
+      "offset": 7392,
       "length": 17,
       "value": "\"InvestigationId\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 7406,
+      "offset": 7483,
       "length": 11,
       "value": "\"DestWidth\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 7492,
+      "offset": 7569,
       "length": 12,
       "value": "\"DestHeight\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 7572,
+      "offset": 7649,
       "length": 5,
       "value": "\"Fps\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 7658,
+      "offset": 7735,
       "length": 12,
       "value": "\"ComprLevel\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 7748,
+      "offset": 7825,
       "length": 15,
       "value": "\"KeyFramesOnly\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 7838,
+      "offset": 7915,
       "length": 12,
       "value": "\"SignalType\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 7925,
+      "offset": 8002,
       "length": 12,
       "value": "\"MethodType\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 8009,
+      "offset": 8086,
       "length": 9,
       "value": "\"VideoId\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 8091,
+      "offset": 8168,
       "length": 10,
       "value": "\"SrcWidth\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 8175,
+      "offset": 8252,
       "length": 11,
       "value": "\"SrcHeight\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 8258,
+      "offset": 8335,
       "length": 9,
       "value": "\"Address\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 8336,
+      "offset": 8413,
       "length": 6,
       "value": "\"Port\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 8410,
+      "offset": 8487,
       "length": 10,
       "value": "\"Bookmark\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 8489,
+      "offset": 8566,
       "length": 6,
       "value": "\"Time\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 8574,
+      "offset": 8651,
       "length": 16,
       "value": "\"TimeRangeBegin\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 8667,
+      "offset": 8744,
       "length": 14,
       "value": "\"TimeRangeEnd\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 8756,
+      "offset": 8833,
       "length": 12,
       "value": "\"StreamType\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 8856,
+      "offset": 8933,
       "length": 15,
       "value": "\"FragmentedMP4\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 8952,
+      "offset": 9029,
       "length": 27,
       "value": "\"UserInitiatedDownsampling\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 9059,
+      "offset": 9136,
       "length": 17,
       "value": "\"ResizeAvailable\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 9153,
+      "offset": 9230,
       "length": 14,
       "value": "\"OriginalSize\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 9247,
+      "offset": 9324,
       "length": 24,
       "value": "\"CloseConnectionOnError\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 9353,
+      "offset": 9430,
       "length": 6,
       "value": "\"Live\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 9440,
+      "offset": 9517,
       "length": 10,
       "value": "\"Playback\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 9526,
+      "offset": 9603,
       "length": 5,
       "value": "\"PTZ\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 9614,
+      "offset": 9691,
       "length": 8,
       "value": "\"Preset\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 9703,
+      "offset": 9780,
       "length": 5,
       "value": "\"Yes\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 9788,
+      "offset": 9865,
       "length": 4,
       "value": "\"No\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 9874,
+      "offset": 9951,
       "length": 11,
       "value": "\"Sequences\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 9968,
+      "offset": 10045,
       "length": 11,
       "value": "\"ExportAvi\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 10063,
+      "offset": 10140,
       "length": 12,
       "value": "\"ExportJpeg\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 10163,
+      "offset": 10240,
       "length": 25,
       "value": "\"ForcePlaybackFromExport\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 10261,
+      "offset": 10338,
       "length": 10,
       "value": "\"SeekType\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 10346,
+      "offset": 10423,
       "length": 6,
       "value": "\"Pull\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 10427,
+      "offset": 10504,
       "length": 6,
       "value": "\"Push\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 10507,
+      "offset": 10584,
       "length": 13,
       "value": "\"CloseStream\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 10590,
+      "offset": 10667,
       "length": 9,
       "value": "\"VideoId\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 10674,
+      "offset": 10751,
       "length": 14,
       "value": "\"ChangeStream\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 10760,
+      "offset": 10837,
       "length": 9,
       "value": "\"SrcLeft\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 10842,
+      "offset": 10919,
       "length": 10,
       "value": "\"SrcRight\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 10923,
+      "offset": 11000,
       "length": 8,
       "value": "\"SrcTop\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 11005,
+      "offset": 11082,
       "length": 11,
       "value": "\"SrcBottom\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 11087,
+      "offset": 11164,
       "length": 9,
       "value": "\"VideoId\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 11165,
+      "offset": 11242,
       "length": 7,
       "value": "\"Speed\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 11251,
+      "offset": 11328,
       "length": 9,
       "value": "\"PrevSeq\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 11339,
+      "offset": 11416,
       "length": 9,
       "value": "\"NextSeq\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 11429,
+      "offset": 11506,
       "length": 11,
       "value": "\"PrevFrame\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 11521,
+      "offset": 11598,
       "length": 11,
       "value": "\"NextFrame\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 11604,
+      "offset": 11681,
       "length": 10,
       "value": "\"SeekType\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 11682,
+      "offset": 11759,
       "length": 6,
       "value": "\"Time\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 11759,
+      "offset": 11836,
       "length": 9,
       "value": "\"PtzMove\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 11841,
+      "offset": 11918,
       "length": 11,
       "value": "\"PtzPreset\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 11923,
+      "offset": 12000,
       "length": 15,
       "value": "\"GetPtzPresets\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 12010,
+      "offset": 12087,
       "length": 9,
       "value": "\"VideoId\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 12089,
+      "offset": 12166,
       "length": 14,
       "value": "\"GetSequences\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 12175,
+      "offset": 12252,
       "length": 10,
       "value": "\"CameraId\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 12253,
+      "offset": 12330,
       "length": 6,
       "value": "\"Time\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 12330,
+      "offset": 12407,
       "length": 9,
       "value": "\"SeqType\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 12413,
+      "offset": 12490,
       "length": 12,
       "value": "\"BeforeTime\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 12500,
+      "offset": 12577,
       "length": 13,
       "value": "\"BeforeCount\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 12586,
+      "offset": 12663,
       "length": 11,
       "value": "\"AfterTime\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 12671,
+      "offset": 12748,
       "length": 12,
       "value": "\"AfterCount\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 12762,
+      "offset": 12839,
       "length": 17,
       "value": "\"InvestigationId\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 12851,
+      "offset": 12928,
       "length": 10,
       "value": "\"ItemKind\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 12949,
+      "offset": 13026,
       "length": 26,
       "value": "\"ForceSequencesFromExport\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 13046,
+      "offset": 13123,
       "length": 10,
       "value": "\"Sequence\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 13132,
+      "offset": 13209,
       "length": 11,
       "value": "\"StartTime\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 13219,
+      "offset": 13296,
       "length": 11,
       "value": "\"TimeStamp\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 13304,
+      "offset": 13381,
       "length": 9,
       "value": "\"EndTime\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 13367,
+      "offset": 13444,
       "length": 19,
       "value": "\"VideoPushLocation\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 13462,
+      "offset": 13539,
       "length": 8,
       "value": "\"ItemId\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 13536,
+      "offset": 13613,
       "length": 9,
       "value": "\"ItemIds\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 13621,
+      "offset": 13698,
       "length": 20,
       "value": "\"RequestAudioStream\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 13719,
+      "offset": 13796,
       "length": 22,
       "value": "\"RequestAudioStreamIn\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 13819,
+      "offset": 13896,
       "length": 15,
       "value": "\"AudioEncoding\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 13917,
+      "offset": 13994,
       "length": 20,
       "value": "\"AudioBitsPerSample\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 14019,
+      "offset": 14096,
       "length": 19,
       "value": "\"AudioSamplingRate\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 14122,
+      "offset": 14199,
       "length": 21,
       "value": "\"AudioChannelsNumber\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 14221,
+      "offset": 14298,
       "length": 15,
       "value": "\"StreamHeaders\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 14321,
+      "offset": 14398,
       "length": 24,
       "value": "\"CloseConnectionOnError\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 14435,
+      "offset": 14512,
       "length": 22,
       "value": "\"PlaybackControllerId\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 14542,
+      "offset": 14619,
       "length": 17,
       "value": "\"InvestigationId\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 14632,
+      "offset": 14709,
       "length": 12,
       "value": "\"ControlPTZ\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 14717,
+      "offset": 14794,
       "length": 6,
       "value": "\"Type\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 14801,
+      "offset": 14878,
       "length": 7,
       "value": "\"Swipe\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 14891,
+      "offset": 14968,
       "length": 12,
       "value": "\"TapAndHold\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 14980,
+      "offset": 15057,
       "length": 6,
       "value": "\"Step\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 15063,
+      "offset": 15140,
       "length": 10,
       "value": "\"CameraId\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 15157,
+      "offset": 15234,
       "length": 17,
       "value": "\"GestureXPercent\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 15258,
+      "offset": 15335,
       "length": 17,
       "value": "\"GestureYPercent\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 15359,
+      "offset": 15436,
       "length": 17,
       "value": "\"GestureDuration\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 15459,
+      "offset": 15536,
       "length": 16,
       "value": "\"GestureTimeout\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 15548,
+      "offset": 15625,
       "length": 9,
       "value": "\"PtzMove\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 15639,
+      "offset": 15716,
       "length": 24,
       "value": "\"GetAccessControlEvents\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 15746,
+      "offset": 15823,
       "length": 22,
       "value": "\"AccessControlEventId\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 15857,
+      "offset": 15934,
       "length": 23,
       "value": "\"AccessControlPageSize\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 15965,
+      "offset": 16042,
       "length": 19,
       "value": "\"AccessControlPage\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 16077,
+      "offset": 16154,
       "length": 27,
       "value": "\"AccessControlEndTimestamp\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 16199,
+      "offset": 16276,
       "length": 39,
       "value": "\"ExcludedAccessControlEventCategoryIds\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 16337,
+      "offset": 16414,
       "length": 33,
       "value": "\"AccessControlIncludeEventsCount\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 16436,
+      "offset": 16513,
       "length": 23,
       "value": "\"GetAccessControlDoors\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 16528,
+      "offset": 16605,
       "length": 21,
       "value": "\"AccessControlDoorId\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 16633,
+      "offset": 16710,
       "length": 28,
       "value": "\"GetAccessControlDoorStates\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 16754,
+      "offset": 16831,
       "length": 23,
       "value": "\"AccessControlSystemId\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 16868,
+      "offset": 16945,
       "length": 21,
       "value": "\"AccessControlDoorId\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 16964,
+      "offset": 17041,
       "length": 24,
       "value": "\"GetAccessRequestEvents\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 17064,
+      "offset": 17141,
       "length": 33,
       "value": "\"GetAccessControlEventCategories\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 17182,
+      "offset": 17259,
       "length": 29,
       "value": "\"ExecuteAccessControlCommand\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 17292,
+      "offset": 17369,
       "length": 23,
       "value": "\"AccessControlSystemId\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 17398,
+      "offset": 17475,
       "length": 36,
       "value": "\"AccessControlOperationalInstanceId\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 17520,
+      "offset": 17597,
       "length": 28,
       "value": "\"AccessControlCommandTypeId\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 17635,
+      "offset": 17712,
       "length": 9,
       "value": "\"EventId\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 17738,
+      "offset": 17815,
       "length": 23,
       "value": "\"TriggerSourceObjectId\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 17853,
+      "offset": 17930,
       "length": 21,
       "value": "\"TriggerSourceKindId\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 17952,
+      "offset": 18029,
       "length": 17,
       "value": "\"GetCapabilities\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 18051,
+      "offset": 18128,
       "length": 8,
       "value": "\"ItemId\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 18134,
+      "offset": 18211,
       "length": 14,
       "value": "\"GetBookmarks\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 18229,
+      "offset": 18306,
       "length": 12,
       "value": "\"BookmarkId\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 18317,
+      "offset": 18394,
       "length": 7,
       "value": "\"Count\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 18404,
+      "offset": 18481,
       "length": 11,
       "value": "\"StartTime\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 18493,
+      "offset": 18570,
       "length": 9,
       "value": "\"EndTime\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 18584,
+      "offset": 18661,
       "length": 13,
       "value": "\"MyBookmarks\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 18675,
+      "offset": 18752,
       "length": 9,
       "value": "\"Keyword\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 18770,
+      "offset": 18847,
       "length": 17,
       "value": "\"SearchCameraIds\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 18873,
+      "offset": 18950,
       "length": 25,
       "value": "\"RequestBookmarkCreation\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 18983,
+      "offset": 19060,
       "length": 12,
       "value": "\"BeforeTime\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 19079,
+      "offset": 19156,
       "length": 11,
       "value": "\"AfterTime\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 19162,
+      "offset": 19239,
       "length": 16,
       "value": "\"DeleteBookmark\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 19261,
+      "offset": 19338,
       "length": 12,
       "value": "\"BookmarkId\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 19350,
+      "offset": 19427,
       "length": 16,
       "value": "\"UpdateBookmark\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 19449,
+      "offset": 19526,
       "length": 12,
       "value": "\"BookmarkId\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 19543,
+      "offset": 19620,
       "length": 11,
       "value": "\"StartTime\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 19634,
+      "offset": 19711,
       "length": 9,
       "value": "\"EndTime\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 19720,
+      "offset": 19797,
       "length": 6,
       "value": "\"Time\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 19803,
+      "offset": 19880,
       "length": 6,
       "value": "\"Name\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 19893,
+      "offset": 19970,
       "length": 13,
       "value": "\"Description\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 19983,
+      "offset": 20060,
       "length": 16,
       "value": "\"CreateBookmark\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 20079,
+      "offset": 20156,
       "length": 9,
       "value": "\"VideoId\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 20172,
+      "offset": 20249,
       "length": 13,
       "value": "\"Description\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 20266,
+      "offset": 20343,
       "length": 10,
       "value": "\"CameraId\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 20353,
+      "offset": 20430,
       "length": 6,
       "value": "\"Name\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 20436,
+      "offset": 20513,
       "length": 6,
       "value": "\"Time\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 20524,
+      "offset": 20601,
       "length": 11,
       "value": "\"StartTime\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 20615,
+      "offset": 20692,
       "length": 9,
       "value": "\"EndTime\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 20711,
+      "offset": 20788,
       "length": 17,
       "value": "\"Mobile bookmark\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 20803,
+      "offset": 20880,
       "length": 20,
       "value": "\"GetThumbnailByTime\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 20902,
+      "offset": 20979,
       "length": 10,
       "value": "\"CameraId\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 20991,
+      "offset": 21068,
       "length": 10,
       "value": "\"SeekType\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 21077,
+      "offset": 21154,
       "length": 11,
       "value": "\"DestWidth\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 21165,
+      "offset": 21242,
       "length": 12,
       "value": "\"DestHeight\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 21252,
+      "offset": 21329,
       "length": 6,
       "value": "\"Time\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 21337,
+      "offset": 21414,
       "length": 10,
       "value": "\"TimeSpan\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 21433,
+      "offset": 21510,
       "length": 17,
       "value": "\"InvestigationId\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 21529,
+      "offset": 21606,
       "length": 18,
       "value": "\"RequestAudioPush\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 21607,
+      "offset": 21684,
       "length": 31,
       "value": "\"com.milestone.connectionerror\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 21716,
+      "offset": 21793,
       "length": 19,
       "value": "\"ServerProductCode\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 21808,
+      "offset": 21885,
       "length": 3,
       "value": "\"1\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 21884,
+      "offset": 21961,
       "length": 3,
       "value": "\"2\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 21958,
+      "offset": 22035,
       "length": 8,
       "value": "\"Server\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 22035,
+      "offset": 22112,
       "length": 17,
       "value": "\"Milestone Arcus\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 22121,
+      "offset": 22198,
       "length": 24,
       "value": "\"Milestone Husky Series\""
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKServerInfo.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKServerInfo.swift",
       "kind": "IntegerLiteral",
       "offset": 278,
       "length": 4,
       "value": "8081"
     },
     {
-      "filePath": "\/Users\/build\/TC\/work\/60b3a42f4362f74d\/MIPSDKMobile\/MIPSDKMobile\/XPSDKServerInfo.swift",
+      "filePath": "\/Users\/runner\/work\/Mobile_SDK_iOS\/Mobile_SDK_iOS\/MIPSDKMobile\/MIPSDKMobile\/XPSDKServerInfo.swift",
       "kind": "BooleanLiteral",
       "offset": 375,
       "length": 5,

@@ -34,6 +34,10 @@ class CameraViewController: UIViewController {
         stopCurrentStream()
     }
     
+    override func viewWillTransition(to size: CGSize, with coordinator: any UIViewControllerTransitionCoordinator) {
+        previewLayer.frame = CGRect(origin: .zero, size: size)
+    }
+    
     // MARK: IBAction methods
     @IBAction func startVideoButtonTapped(_ sender: UIButton) {
         sender.isSelected = !sender.isSelected

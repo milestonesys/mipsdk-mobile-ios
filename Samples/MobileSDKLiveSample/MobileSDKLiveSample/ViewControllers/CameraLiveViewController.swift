@@ -69,15 +69,21 @@ class CameraLiveViewController: UIViewController {
             return
         }
         
-        let videoViewFrame = CGRect(x: 0,
-                                    y: 0,
-                                    width: view.bounds.width,
-                                    height: view.bounds.height - (navigationController?.navigationBar.frame.size.height ?? 0.0))
-        let cameraView = CameraVideoView(frame: videoViewFrame)
-        cameraView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-        view.addSubview(cameraView)
+        let cameraView = CameraVideoView()
+        cameraView.translatesAutoresizingMaskIntoConstraints = false
         cameraView.delegate = self
         cameraView.videoConnection = downstreamVideoConnection
+        view.addSubview(cameraView)
+        
+        let safeArea = view.safeAreaLayoutGuide
+        NSLayoutConstraint.activate([
+            cameraView.topAnchor.constraint(equalTo: safeArea.topAnchor),
+            cameraView.leadingAnchor.constraint(equalTo: safeArea.leadingAnchor),
+            cameraView.trailingAnchor.constraint(equalTo: safeArea.trailingAnchor),
+            cameraView.bottomAnchor.constraint(lessThanOrEqualTo: safeArea.bottomAnchor),
+            cameraView.centerYAnchor.constraint(equalTo: safeArea.centerYAnchor)
+        ])
+        
         cameraVideoView = cameraView
         downstreamVideoConnection.delegate = cameraVideoView
         downstreamVideoConnection.open()
