@@ -1,12 +1,13 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
-// swift-module-flags: -target arm64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MIPSDKMobile
-// swift-module-flags-ignorable: -enable-bare-slash-regex
+// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
+// swift-module-flags: -target arm64-apple-ios16.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name MIPSDKMobile
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
 import Foundation
 @_exported import MIPSDKMobile
 import Swift
 import _Concurrency
 import _StringProcessing
+import _SwiftConcurrencyShims
 @objc public enum XPSDKConnectionState : Swift.Int {
   case idle = 0
   case connecting = 1
@@ -70,6 +71,7 @@ import _StringProcessing
   final public let raceConnections: Foundation.NSMutableSet
   @objc open var server: Swift.AnyObject?
   @objc open var changePasswordRelativePath: Swift.String?
+  @objc open var communicationChannel: Swift.String?
   @objc public func setupWithURLString(_ urlString: Swift.String, uuid: Swift.String? = nil, serviceAlias: Swift.String? = nil)
   @objc public func setupWithServerInfo(_ serInfo: MIPSDKMobile.XPSDKServerInfo)
   @objc public func isUserAnalyticsFeatureEnabledOnServer() -> Swift.Bool
@@ -77,8 +79,8 @@ import _StringProcessing
   @objc open func setHeartbeatTimeout(newValue: Swift.Int)
   @objc public func addRaceConnection(_ raceConnection: MIPSDKMobile.XPSDKConnection?)
   public func addRequest(_ request: MIPSDKMobile.XPSDKRequest?)
-  @objc public func addDelegate(_ delegate: MIPSDKMobile.XPMobileSDKConnectionDelegate?)
-  @objc public func removeDelegate(_ delegate: MIPSDKMobile.XPMobileSDKConnectionDelegate?)
+  @objc public func addDelegate(_ delegate: (any MIPSDKMobile.XPMobileSDKConnectionDelegate)?)
+  @objc public func removeDelegate(_ delegate: (any MIPSDKMobile.XPMobileSDKConnectionDelegate)?)
   @objc public func explicitSetOfConnectionState(_ state: Foundation.NSNumber)
   @objc public static func resetSharedConnection()
   public func sendCommand(name: Swift.String, parameters: [Swift.String : Swift.String]?, successHandler: MIPSDKMobile.SuccessResponse?, failureHandler: MIPSDKMobile.FailureBlock?)
@@ -97,8 +99,8 @@ public typealias FailureBlock = (Foundation.NSError?) -> Swift.Void
   @objc open var connection: MIPSDKMobile.XPSDKConnection?
   @objc open var videoFactory: MIPSDKMobile.XPSDKVideoFactory?
   @objc open var method: MIPSDKMobile.XPSDKVideoConnectionMethod
-  @objc open var videoConnectionDelegate: MIPSDKMobile.XPSDKVideoConnectionDelegate?
-  @objc convenience public init(connection: MIPSDKMobile.XPSDKConnection, videoConnectionDelegate: MIPSDKMobile.XPSDKVideoConnectionDelegate, videoProperties: Swift.Dictionary<Swift.String, Any>)
+  @objc open var videoConnectionDelegate: (any MIPSDKMobile.XPSDKVideoConnectionDelegate)?
+  @objc convenience public init(connection: MIPSDKMobile.XPSDKConnection, videoConnectionDelegate: any MIPSDKMobile.XPSDKVideoConnectionDelegate, videoProperties: Swift.Dictionary<Swift.String, Any>)
   @objc public func requestVideo() -> Foundation.NSError?
   @objc public func rescaleVideo(width: Swift.Int, height: Swift.Int) -> Swift.Bool
   @objc public func cropVideo(left: Swift.Int, top: Swift.Int, right: Swift.Int, bottom: Swift.Int) -> Swift.Bool
@@ -137,7 +139,7 @@ extension MIPSDKMobile.XPSDKConnection {
   @objc open var videoConnection: MIPSDKMobile.XPSDKVideoConnection?
   @objc open var compressionLevel: Swift.Int
   @objc open var fps: Swift.Int
-  @objc open var videoConnectionDelegate: MIPSDKMobile.XPSDKVideoConnectionDelegate?
+  @objc open var videoConnectionDelegate: (any MIPSDKMobile.XPSDKVideoConnectionDelegate)?
   @objc open var isVideoConnectionStarted: Swift.Bool
   @objc open var successfullyChangedStream: Swift.Bool
   @objc deinit
@@ -189,7 +191,7 @@ extension MIPSDKMobile.XPSDKConnection {
   @objc open func alarms() -> Foundation.NSArray?
   @objc open func alarmDataSettings() -> Foundation.NSArray?
   @objc override dynamic public init()
-  @objc override dynamic public init(objects: Swift.UnsafePointer<AnyObject>?, forKeys keys: Swift.UnsafePointer<Foundation.NSCopying>?, count cnt: Swift.Int)
+  @objc override dynamic public init(objects: Swift.UnsafePointer<AnyObject>?, forKeys keys: Swift.UnsafePointer<any Foundation.NSCopying>?, count cnt: Swift.Int)
   @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
 }
@@ -373,8 +375,8 @@ public enum Level : Swift.Int {
   open class func getThumbnail(forCameraId cameraId: Swift.String, investigationId: Swift.String?, seekType: Swift.String, size: CoreFoundation.CGSize, time: Foundation.NSNumber, timespan: Foundation.NSNumber, successHandler: MIPSDKMobile.SuccessResponse?, failureHandler: MIPSDKMobile.FailureBlock?) -> MIPSDKMobile.XPSDKRequest
   @objc @discardableResult
   open class func getTileServers(successHandler: MIPSDKMobile.SuccessResponse?, failureHandler: MIPSDKMobile.FailureBlock?) -> MIPSDKMobile.XPSDKRequest
-  @objc open class func addDelegate(_ delegate: MIPSDKMobile.XPMobileSDKConnectionDelegate)
-  @objc open class func removeDelegate(_ delegate: MIPSDKMobile.XPMobileSDKConnectionDelegate)
+  @objc open class func addDelegate(_ delegate: any MIPSDKMobile.XPMobileSDKConnectionDelegate)
+  @objc open class func removeDelegate(_ delegate: any MIPSDKMobile.XPMobileSDKConnectionDelegate)
   @objc open class func stopAllSessions()
   @objc open class func stopRequestWithName(_ name: Swift.String) -> Swift.Bool
   @objc open class func sendLiveMessage()
@@ -399,6 +401,7 @@ extension MIPSDKMobile.XPSDKConnection {
   @objc public static let XPSDKKeyLength: Swift.String
   @objc public static let XPSDKConnectionId: Swift.String
   @objc public static let XPSDKChangePasswordRelativePath: Swift.String
+  @objc public static let XPSDKCommunicationChanel: Swift.String
   @objc public static let XPSDKServerId: Swift.String
   @objc public static let XPSDKTimeout: Swift.String
   @objc public static let XPSDKConnect: Swift.String

@@ -1,7 +1,7 @@
 framework module MIPSDKMobile {
   umbrella header "MIPSDKMobile.h"
-
   export *
+
   module * { export * }
 }
 
