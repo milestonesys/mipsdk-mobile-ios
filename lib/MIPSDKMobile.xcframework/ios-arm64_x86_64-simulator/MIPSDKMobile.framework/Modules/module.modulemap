@@ -7,5 +7,4 @@ framework module MIPSDKMobile {
 
 module MIPSDKMobile.Swift {
   header "MIPSDKMobile-Swift.h"
-  requires objc
 }
