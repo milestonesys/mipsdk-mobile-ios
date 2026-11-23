@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.3.2 effective-5.10 (swiftlang-6.3.2.1.108 clang-2100.1.1.101)
+// swift-compiler-version: Apple Swift version 6.3.3 effective-5.10 (swiftlang-6.3.3.1.3 clang-2100.1.1.101)
 // swift-module-flags: -target x86_64-apple-ios18.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name MIPSDKMobile
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.2
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.3
 import Foundation
 @_exported import MIPSDKMobile
 import Swift
@@ -335,6 +335,10 @@ public enum Level : Swift.Int {
   @objc @discardableResult
   open class func deleteInvestigationExport(withId investigationId: Swift.String, exportType: Swift.String, successHandler: MIPSDKMobile.SuccessResponse?, failureHandler: MIPSDKMobile.FailureBlock?) -> MIPSDKMobile.XPSDKRequest
   @objc @discardableResult
+  open class func startInvestigationExport(withId investigationId: Swift.String, exportType: Swift.String, includeAudio: Swift.Bool, successHandler: MIPSDKMobile.SuccessResponse?, failureHandler: MIPSDKMobile.FailureBlock?) -> MIPSDKMobile.XPSDKRequest
+  @objc @discardableResult
+  open class func createExportDownloadLink(withExportId exportId: Swift.String, investigationId: Swift.String, exportType: Swift.String, successHandler: MIPSDKMobile.SuccessResponse?, failureHandler: MIPSDKMobile.FailureBlock?) -> MIPSDKMobile.XPSDKRequest
+  @objc @discardableResult
   open class func getSequences(withCameraId cameraID: Swift.String, seqType: Swift.String, time: Foundation.NSNumber, beforeTime: Foundation.NSNumber?, beforeCount: Foundation.NSNumber?, afterTime: Foundation.NSNumber?, afterCount: Foundation.NSNumber?, investigationId: Swift.String?, forceSequencesFromExport: Swift.String?, successHandler: MIPSDKMobile.SuccessResponse?, failureHandler: MIPSDKMobile.FailureBlock?) -> MIPSDKMobile.XPSDKRequest
   @objc @discardableResult
   open class func getDifferentSequences(withCameraId cameraID: Swift.String, seqType: Swift.String, itemKind: Swift.String?, time: Foundation.NSNumber, beforeTime: Foundation.NSNumber?, beforeCount: Foundation.NSNumber?, afterTime: Foundation.NSNumber?, afterCount: Foundation.NSNumber?, investigationId: Swift.String?, forceSequencesFromExport: Swift.String?, successHandler: MIPSDKMobile.SuccessResponse?, failureHandler: MIPSDKMobile.FailureBlock?) -> MIPSDKMobile.XPSDKRequest
@@ -421,6 +425,7 @@ extension MIPSDKMobile.XPSDKConnection {
   @objc public static let XPSDKSupportsExtendedResamplingFactor: Swift.String
   @objc public static let XPSDKClientType: Swift.String
   @objc public static let XPSDKSupportsSmartMap: Swift.String
+  @objc public static let XPSDKSupportsNotifications: Swift.String
   @objc public static let XPSDKSupportsAudioIn: Swift.String
   @objc public static let XPSDKSupportsAudioOut: Swift.String
   @objc public static let XPSDKSupportsAdaptiveStreaming: Swift.String
@@ -496,6 +501,14 @@ extension MIPSDKMobile.XPSDKConnection {
   @objc public static let XPSDKDeleteInvestigationExport: Swift.String
   @objc public static let XPSDKDeleteInvestigationExportParamId: Swift.String
   @objc public static let XPSDKDeleteInvestigationExportParamExportType: Swift.String
+  @objc public static let XPSDKStartInvestigationExport: Swift.String
+  @objc public static let XPSDKStartInvestigationExportParamId: Swift.String
+  @objc public static let XPSDKStartInvestigationExportParamExportType: Swift.String
+  @objc public static let XPSDKStartInvestigationExportParamIncludeAudio: Swift.String
+  @objc public static let XPSDKCreateExportDownloadLink: Swift.String
+  @objc public static let XPSDKCreateExportDownloadLinkParamExportId: Swift.String
+  @objc public static let XPSDKCreateExportDownloadLinkParamInvestigationId: Swift.String
+  @objc public static let XPSDKCreateExportDownloadLinkParamType: Swift.String
   @objc public static let XPSDKGetTileServers: Swift.String
   @objc public static let XPSDKConnectionRequestNameRequestStream: Swift.String
   @objc public static let XPSDKConnectionRequestStreamParamCameraID: Swift.String
